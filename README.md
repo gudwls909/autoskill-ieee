@@ -31,7 +31,7 @@ method, AutoSkill reaches **+29.7 % Tech-Tree Score** (113.6 vs. 87.6) with a
 
 | 150 steps, mean ± std, *n* = 10 / method | Distinct items | Tech-Tree Score | Library size | Items / skill |
 |---|---:|---:|---:|---:|
-| Voyager (GPT-4, vanilla) | 38.8 ± 1.7 | 87.6 ± 4.7 | 56.3 ± 10.0 | 0.69 |
+| Voyager (vanilla) | 38.8 ± 1.7 | 87.6 ± 4.7 | 56.3 ± 10.0 | 0.69 |
 | **AutoSkill (ours)** | **42.8 ± 3.9** | **113.6 ± 8.8** | **39.1 ± 7.8** | **1.09** |
 | Δ | +10.3 % (*p* = 0.007) | **+29.7 %** (*p* < 10⁻⁴) | −31 % | +59 % |
 
@@ -142,7 +142,8 @@ python analysis/plot_efficiency.py                      # TTS per stored skill
   `craftItem.js`, a hard-coded chest loop that bypassed the curriculum filter, and the failed-task
   retry threshold in `curriculum.py`); the Voyager baseline is unmodified upstream code. Raw
   per-run values for all 20 runs are in `results/per_run_n10.csv`.
-* GPT-4 for all agents, temperature 0, peaceful difficulty, 150 prompting iterations, one
+* GPT-5.4-mini for the curriculum, action, and critic agents and GPT-5.4-nano for the skill manager
+  and embeddings (identical for both methods, as in the paper); peaceful difficulty, 150 prompting iterations, one
   Minecraft world per run. Standard deviations are population (ddof = 0), matching the paper.
 * Detailed library-quality analyses in the paper (composite rate, true-reuse rate, ablations) use
   the 5 instrumented runs, which log per-generation reuse events.
