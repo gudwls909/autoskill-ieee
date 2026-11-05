@@ -105,8 +105,11 @@ def lib_size_series(run_dir: str) -> np.ndarray:
 
 
 def align_stack(series_list: list[np.ndarray]) -> np.ndarray:
-    min_len = min(len(s) for s in series_list)
-    return np.stack([s[:min_len] for s in series_list], axis=0)
+    # Pad shorter runs with their last value so the final step reflects
+    # every run's final library size (truncation would drop late growth).
+    max_len = max(len(s) for s in series_list)
+    return np.stack([np.pad(s, (0, max_len - len(s)), mode="edge")
+                     for s in series_list], axis=0)
 
 
 # ── Main plot ─────────────────────────────────────────────────────────────────
