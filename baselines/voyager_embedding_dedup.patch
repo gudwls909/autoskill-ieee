@@ -1,0 +1,49 @@
+diff -ruN -x __pycache__ -x node_modules -x '*.pyc' -x logs -x ckpt voyager_vb/voyager/agents/skill.py voyager_ed/voyager/agents/skill.py
+--- voyager_vb/voyager/agents/skill.py	2026-08-20 06:44:34.034685340 +0900
++++ voyager_ed/voyager/agents/skill.py	2026-11-14 14:00:31.393507593 +0900
+@@ -76,6 +76,21 @@
+         print(
+             f"\033[33mSkill Manager generated description for {program_name}:\n{skill_description}\033[0m"
+         )
++        # R3.1 baseline: embedding-similarity dedup. Skip storing when the new description's cosine
++        # similarity to an existing skill (other than an overwrite of the same name) is >= EMB_DEDUP_TAU.
++        tau = float(os.environ.get("EMB_DEDUP_TAU", "0.95"))
++        if self.skills and program_name not in self.skills:
++            q = self.vectordb._embedding_function.embed_query(skill_description)
++            hit = self.vectordb._collection.query(query_embeddings=[q], n_results=1, include=["embeddings"])
++            e = hit["embeddings"][0][0]
++            cos = sum(a * b for a, b in zip(q, e)) / ((sum(a * a for a in q) ** 0.5) * (sum(b * b for b in e) ** 0.5))
++            if cos >= tau:
++                print(f"\033[33mSkill Manager: embedding dedup — {program_name} ~ {hit['ids'][0][0]} (cos={cos:.3f}). Skipping.\033[0m")
++                self.last_dedup = {"status": "dedup", "representative": hit["ids"][0][0], "cos": cos}
++                return
++            self.last_dedup = {"status": "added", "representative": hit["ids"][0][0], "cos": cos}
++        else:
++            self.last_dedup = {"status": "added", "representative": None}
+         if program_name in self.skills:
+             print(f"\033[33mSkill {program_name} already exists. Rewriting!\033[0m")
+             self.vectordb._collection.delete(ids=[program_name])
+diff -ruN -x __pycache__ -x node_modules -x '*.pyc' -x logs -x ckpt voyager_vb/voyager/voyager.py voyager_ed/voyager/voyager.py
+--- voyager_vb/voyager/voyager.py	2026-08-20 06:44:34.034685340 +0900
++++ voyager_ed/voyager/voyager.py	2026-11-14 13:49:01.496353565 +0900
+@@ -545,15 +545,17 @@
+                 print(f"\033[41m{e}\033[0m")
+ 
+             if info["success"]:
++                self.skill_manager.last_dedup = {"status": "skipped", "representative": None}
+                 self.skill_manager.add_new_skill(info)
++                _d = self.skill_manager.last_dedup
+                 self._append_jsonl("skill_log.jsonl", {
+-                    "kind": "skill_add",
++                    "kind": {"added": "skill_add"}.get(_d["status"], _d["status"]),
+                     "task": info["task"],
+                     "program_name": info["program_name"],
+                     "family_key": None,
+                     "parse_mode": None,
+-                    "nearest_score": None,
+-                    "matched_neighbor": None,
++                    "nearest_score": _d.get("cos"),
++                    "matched_neighbor": _d.get("representative"),
+                     "canonical_desc": None,
+                     "dedup_group_id": None,
+                     "requested_count": None,

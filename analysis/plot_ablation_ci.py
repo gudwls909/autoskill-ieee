@@ -23,14 +23,7 @@ import matplotlib.patches as mpatches
 
 LOG_BASE = Path(__file__).resolve().parent.parent / "logs"
 
-RUNS: dict[str, list[str]] = {
-    "Voyager": [
-        "run-2026-04-03_14-13-42",
-        "run-2026-04-03_19-03-57",
-        "run-2026-04-04_21-18-15",
-        "run-2026-04-05_15-29-49",
-        "run-2026-04-06_02-00-16",
-    ],
+_N5: dict[str, list[str]] = {
     "w/o Dedup": [
         "run-2026-04-12_17-47-11",
         "run-2026-04-13_00-57-58",
@@ -45,13 +38,15 @@ RUNS: dict[str, list[str]] = {
         "run-2026-05-14_07-14-01",
         "run-2026-05-14_22-27-55-slot1",
     ],
-    "AutoSkill": [
-        "run-2026-04-08_17-04-48",
-        "run-2026-04-12_02-43-00",
-        "run-2026-04-12_11-00-21",
-        "run-2026-05-14_18-47-19",
-        "run-2026-05-14_02-05-05",
-    ],
+}
+from plot_dedup_efficiency import RUNS as _MAIN
+# n=10 per condition: original five ablation runs + round-2 seeds 6-10; w/o Curriculum = round-2 seeds 1-10
+RUNS: dict[str, list[str]] = {
+    "Voyager": _MAIN["Voyager (main)"],
+    "w/o Dedup": _N5["w/o Dedup"] + [f"run-r2-mini-nd-seed{i}" for i in range(6, 11)],
+    "w/o Critique": _N5["w/o Critique"] + [f"run-r2-mini-nc-seed{i}" for i in range(6, 11)],
+    "w/o Curriculum": [f"run-r2-mini-ncur-seed{i}" for i in range(1, 11)],
+    "AutoSkill": _MAIN["AutoSkill (ours)"],
 }
 
 # Wong colorblind-safe palette
@@ -59,18 +54,21 @@ COLORS = {
     "Voyager":      "#E69F00",   # amber (baseline)
     "w/o Dedup":    "#009E73",   # green
     "w/o Critique": "#CC79A7",   # pink/purple
+    "w/o Curriculum": "#D55E00", # vermillion
     "AutoSkill":    "#0072B2",   # blue (full system)
 }
 LINESTYLES = {
     "Voyager":      "--",
     "w/o Dedup":    "-.",
     "w/o Critique": ":",
+    "w/o Curriculum": (0, (5, 1, 1, 1, 1, 1)),
     "AutoSkill":    "-",
 }
 ZORDER = {
     "Voyager":      2,
     "w/o Dedup":    3,
     "w/o Critique": 3,
+    "w/o Curriculum": 3,
     "AutoSkill":    4,
 }
 

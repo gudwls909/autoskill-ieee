@@ -5,6 +5,17 @@ import sys
 from datetime import datetime
 from voyager import Voyager
 
+# R2: optional model/endpoint override (defaults = paper setup)
+MODEL_MAIN = os.environ.get("MODEL_MAIN", "gpt-5.4-mini")
+MODEL_SMALL = os.environ.get("MODEL_SMALL", "gpt-5.4-nano")
+if os.environ.get("LLM_BASE_URL"):  # local OpenAI-compatible server for chat models only; embeddings stay on OpenAI
+    import langchain_openai
+    _init = langchain_openai.ChatOpenAI.__init__
+    def _patched(self, *a, **k):
+        k.setdefault("base_url", os.environ["LLM_BASE_URL"]); k.setdefault("api_key", "local")
+        _init(self, *a, **k)
+    langchain_openai.ChatOpenAI.__init__ = _patched
+
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 if not OPENAI_API_KEY:
     sys.exit(
@@ -18,7 +29,7 @@ parser.add_argument("-id",   type=str, default=None, help="run id suffix (e.g. e
 parser.add_argument("-from", dest="from_id", type=str, default=None,
                     help="source run id to copy checkpoint from (e.g. run-2026-03-31_14-05-54)")
 parser.add_argument("-ablation", dest="ablation", type=str, default="none",
-                    choices=["none", "no_dedup", "no_critique"],
+                    choices=["none", "no_dedup", "no_critique", "no_curriculum", "voyager_infra"],
                     help="Ablation mode: 'none' (full AutoSkill), "
                          "'no_dedup' (disable deduplication gate), "
                          "'no_critique' (disable reuse critique injection)")
@@ -77,11 +88,11 @@ v = Voyager(
     fresh_world=fresh_world,
     env_request_timeout=180,
     action_agent_task_max_retries=2,
-    action_agent_model_name="gpt-5.4-mini",
-    critic_agent_model_name="gpt-5.4-mini",
-    curriculum_agent_model_name="gpt-5.4-mini",
-    curriculum_agent_qa_model_name="gpt-5.4-nano",
-    skill_manager_model_name="gpt-5.4-nano",
+    action_agent_model_name=MODEL_MAIN,
+    critic_agent_model_name=MODEL_MAIN,
+    curriculum_agent_model_name=MODEL_MAIN,
+    curriculum_agent_qa_model_name=MODEL_SMALL,
+    skill_manager_model_name=MODEL_SMALL,
     ablation=args.ablation,
 )
 v.learn()

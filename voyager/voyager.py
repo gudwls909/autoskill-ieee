@@ -120,8 +120,11 @@ class Voyager:
         run_ckpt_dir = os.path.join(ckpt_dir, self.run_id)
         self.run_ckpt_dir = run_ckpt_dir
 
-        # ablation mode: "none" | "no_dedup" | "no_critique"
-        assert ablation in ("none", "no_dedup", "no_critique"), \
+        # ablation mode: "none" | "no_dedup" | "no_critique" | "no_curriculum"
+        # no_curriculum: Voyager's original curriculum prompt, no tier/library injection (R2, R4.4)
+        # voyager_infra = Voyager's method on AutoSkill's shared infrastructure (primitives, prompts' domain
+        # hints, critic drop rules, loop guards): dedup, critique, and curriculum changes all off.
+        assert ablation in ("none", "no_dedup", "no_critique", "no_curriculum", "voyager_infra"), \
             f"Unknown ablation mode: {ablation!r}"
         self.ablation = ablation
 
@@ -202,6 +205,10 @@ class Voyager:
             core_inventory_items=curriculum_agent_core_inventory_items,
             log_dir=self.log_dir,
         )
+        if ablation in ("no_curriculum", "voyager_infra"):
+            self.curriculum_agent.prompt_name = "curriculum_voyager"
+        if ablation == "voyager_infra":
+            self.action_agent.prompt_name = "action_template_voyager"  # Voyager's soft reuse rule 2
         self.critic_agent = CriticAgent(
             model_name=critic_agent_model_name,
             temperature=critic_agent_temperature,
@@ -220,7 +227,7 @@ class Voyager:
         )
         self.skill_semantic = SkillSemanticAgent(
             log_dir=self.log_dir,
-            model_name="gpt-4o-mini",
+            model_name=os.environ.get("SKILL_SEMANTIC_MODEL", "gpt-4o-mini"),
         )
         self.recorder = U.EventRecorder(ckpt_dir=run_ckpt_dir, resume=resume)
         self.resume = resume
@@ -490,7 +497,7 @@ class Voyager:
         # so the agent sees it even if it succeeds on the very first attempt.
         # Disabled when ablation == "no_critique".
         initial_critique = ""
-        if self.ablation != "no_critique":
+        if self.ablation not in ("no_critique", "voyager_infra"):
             canonical_task = self.skill_semantic.canonicalize_task(task)
             if canonical_task:
                 fk = canonical_task.get("family_key")
@@ -612,7 +619,7 @@ class Voyager:
             # Disabled when ablation == "no_critique".
             already_calls_family = family_skill and family_skill in true_called
             redefined_family = family_skill and family_skill in redefined_known
-            if self.ablation != "no_critique" and family_skill and not already_calls_family:
+            if self.ablation not in ("no_critique", "voyager_infra") and family_skill and not already_calls_family:
                 reuse_critique = self._build_reuse_critique(
                     family_skill, canonical_pre
                 )
@@ -628,7 +635,7 @@ class Voyager:
             # mineBlock, craftItem) that have a loaded skill covering the same material.
             # Inject a specific critique so the LLM replaces them on the next retry.
             # Disabled when ablation == "no_critique".
-            if self.ablation != "no_critique" and not success:
+            if self.ablation not in ("no_critique", "voyager_infra") and not success:
                 prim_critique = self._build_primitive_reuse_critique(code)
                 if prim_critique:
                     critique = (critique + "\n\n" + prim_critique) if critique else prim_critique
@@ -760,8 +767,8 @@ class Voyager:
                 task, context = self.curriculum_agent.propose_next_task(
                     events=self.last_events,
                     chest_observation=self.action_agent.render_chest_observation(),
-                    skill_library=_skill_library,
-                    tier_summary=_tier_summary,
+                    skill_library=None if self.ablation in ("no_curriculum", "voyager_infra") else _skill_library,
+                    tier_summary=None if self.ablation in ("no_curriculum", "voyager_infra") else _tier_summary,
                     max_retries=5,
                 )
             except Exception as e:
@@ -807,14 +814,18 @@ class Voyager:
                     _reset_opts["position"] = _pos
                 except (IndexError, KeyError, TypeError):
                     pass  # last_events unavailable — start fresh
-                for _retry in range(3):
+                # Kicks for invalid_player_movement come in bursts at one spot; back off
+                # and drop the restored position after the first failure (world spawn instead).
+                for _retry in range(6):
                     try:
-                        time.sleep(5)
+                        time.sleep([5, 10, 20, 30, 30, 30][_retry])
+                        if _retry >= 1:
+                            _reset_opts["position"] = None
                         self.last_events = self.env.reset(options=_reset_opts)
                         break  # success
                     except Exception as reset_err:
                         print(f"\033[33mRecovery reset attempt {_retry + 1} failed: {reset_err}\033[0m")
-                        if _retry == 2:
+                        if _retry == 5:
                             print("\033[41mFailed to recover after 3 attempts. Exiting.\033[0m")
                             raise
 
@@ -824,7 +835,7 @@ class Voyager:
                 )
                 add_result = self.skill_manager.add_new_skill(
                     info, canonical=canonical,
-                    allow_dedup=(self.ablation != "no_dedup"),
+                    allow_dedup=(self.ablation not in ("no_dedup", "voyager_infra")),
                 )
                 cjson = canonical.get("canonical_json") or {}
                 neighbors = self.skill_manager.semantic_neighbors(

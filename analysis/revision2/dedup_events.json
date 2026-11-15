@@ -1,0 +1,6812 @@
+[
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "added",
+"task": "Mine 1 wood log",
+"prog": "mineOneWoodLog",
+"rep": "mineOneWoodLog",
+"rep_task": "Mine 1 wood log",
+"fk": "mineBlock:oak_log:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "added",
+"task": "Craft 4 oak planks",
+"prog": "craftFourOakPlanks",
+"rep": "craftFourOakPlanks",
+"rep_task": "Craft 4 oak planks",
+"fk": "craftItem:oak_planks:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "added",
+"task": "Craft wooden pickaxe",
+"prog": "craftWoodenPickaxeProperly",
+"rep": "craftWoodenPickaxeProperly",
+"rep_task": "Craft wooden pickaxe",
+"fk": "placeItem:crafting_table:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "added",
+"task": "Mine 5 iron ore",
+"prog": "mineFiveIronOreWithStonePickaxe",
+"rep": "mineFiveIronOreWithStonePickaxe",
+"rep_task": "Mine 5 iron ore",
+"fk": "mineBlock:iron_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "added",
+"task": "Craft iron axe",
+"prog": "craftIronAxe",
+"rep": "craftIronAxe",
+"rep_task": "Craft iron axe",
+"fk": "craft:iron_axe:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "added",
+"task": "Craft iron sword",
+"prog": "craftIronSword",
+"rep": "craftIronSword",
+"rep_task": "Craft iron sword",
+"fk": "findInventoryItem:iron_sword:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "added",
+"task": "Mine 5 coal ore",
+"prog": "mineFiveCoalOre",
+"rep": "mineFiveCoalOre",
+"rep_task": "Mine 5 coal ore",
+"fk": "mineBlock:coal_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "dedup",
+"task": "Craft iron pickaxe",
+"prog": "craftIronPickaxeTask",
+"rep": "craftWoodenPickaxeProperly",
+"rep_task": "Craft wooden pickaxe",
+"fk": "placeItem:crafting_table:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "dedup",
+"task": "Craft iron pickaxe",
+"prog": "craftIronPickaxe",
+"rep": "craftWoodenPickaxeProperly",
+"rep_task": "Craft wooden pickaxe",
+"fk": "placeItem:crafting_table:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "dedup",
+"task": "Mine 5 coal ore",
+"prog": "mineFiveCoalOreTask",
+"rep": "mineFiveCoalOre",
+"rep_task": "Mine 5 coal ore",
+"fk": "mineBlock:coal_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "dedup",
+"task": "Craft iron pickaxe",
+"prog": "craftIronPickaxeTask",
+"rep": "craftWoodenPickaxeProperly",
+"rep_task": "Craft wooden pickaxe",
+"fk": "placeItem:crafting_table:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "added",
+"task": "Mine 5 redstone ore",
+"prog": "mineFiveRedstoneOre",
+"rep": "mineFiveRedstoneOre",
+"rep_task": "Mine 5 redstone ore",
+"fk": "mineBlock:redstone_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "added",
+"task": "Mine 5 deepslate lapis ore",
+"prog": "mineFiveDeepslateLapisOre",
+"rep": "mineFiveDeepslateLapisOre",
+"rep_task": "Mine 5 deepslate lapis ore",
+"fk": "mineBlock:deepslate_lapis_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "added",
+"task": "Mine 5 deepslate diamond ore",
+"prog": "mineFiveDeepslateDiamonds",
+"rep": "mineFiveDeepslateDiamonds",
+"rep_task": "Mine 5 deepslate diamond ore",
+"fk": "mineBlock:deepslate_diamond_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "dedup",
+"task": "Craft diamond pickaxe",
+"prog": "craftDiamondPickaxeProperly",
+"rep": "craftWoodenPickaxeProperly",
+"rep_task": "Craft wooden pickaxe",
+"fk": "placeItem:crafting_table:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "dedup",
+"task": "Craft iron helmet",
+"prog": "craftIronHelmet",
+"rep": "craftWoodenPickaxeProperly",
+"rep_task": "Craft wooden pickaxe",
+"fk": "placeItem:crafting_table:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "added",
+"task": "Place a chest",
+"prog": "placeChestAroundMe",
+"rep": "placeChestAroundMe",
+"rep_task": "Place a chest",
+"fk": "placeItem:chest:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "skipped",
+"task": "Deposit useless items into the chest at (110, 38, 71)",
+"prog": "depositUselessItemsIntoNearbyChest",
+"rep": null,
+"rep_task": null,
+"fk": "depositItemIntoChest:*:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "dedup",
+"task": "Craft diamond chestplate",
+"prog": "craftDiamondChestplateProperly",
+"rep": "craftWoodenPickaxeProperly",
+"rep_task": "Craft wooden pickaxe",
+"fk": "placeItem:crafting_table:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "added",
+"task": "Mine 5 lapis ore",
+"prog": "mineFiveLapisOreTask",
+"rep": "mineFiveLapisOreTask",
+"rep_task": "Mine 5 lapis ore",
+"fk": "mineBlock:lapis_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "dedup",
+"task": "Mine 5 lapis ore",
+"prog": "mineLapisOreGoal",
+"rep": "mineFiveLapisOreTask",
+"rep_task": "Mine 5 lapis ore",
+"fk": "mineBlock:lapis_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "dedup",
+"task": "Craft bucket",
+"prog": "craftBucketTask",
+"rep": "craftWoodenPickaxeProperly",
+"rep_task": "Craft wooden pickaxe",
+"fk": "placeItem:crafting_table:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "added",
+"task": "Smelt 5 raw copper",
+"prog": "smeltFiveRawCopperTask",
+"rep": "smeltFiveRawCopperTask",
+"rep_task": "Smelt 5 raw copper",
+"fk": "smeltItem:copper_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "added",
+"task": "Mine 5 clay",
+"prog": "mineFiveClay",
+"rep": "mineFiveClay",
+"rep_task": "Mine 5 clay",
+"fk": "mineBlock:clay:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "added",
+"task": "Kill 3 chicken",
+"prog": "killThreeChickensSafely",
+"rep": "killThreeChickensSafely",
+"rep_task": "Kill 3 chicken",
+"fk": "killMob:chicken:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "dedup",
+"task": "Place a chest",
+"prog": "placeChestTask",
+"rep": "placeChestAroundMe",
+"rep_task": "Place a chest",
+"fk": "placeItem:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "skipped",
+"task": "Deposit useless items into the chest at (-145, 64, 57)",
+"prog": "depositUselessItemsIntoChest",
+"rep": null,
+"rep_task": null,
+"fk": "depositItemIntoChest:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "added",
+"task": "Fill bucket with water",
+"prog": "fillBucketWithWater",
+"rep": "fillBucketWithWater",
+"rep_task": "Fill bucket with water",
+"fk": "waitForTicks:*:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "dedup",
+"task": "Mine 5 lapis ore",
+"prog": "mineFiveLapis",
+"rep": "mineFiveLapisOreTask",
+"rep_task": "Mine 5 lapis ore",
+"fk": "mineBlock:lapis_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "added",
+"task": "Mine 5 copper ore",
+"prog": "mineFiveCopperOre",
+"rep": "mineFiveCopperOre",
+"rep_task": "Mine 5 copper ore",
+"fk": "mineBlock:copper_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "dedup",
+"task": "Craft diamond helmet",
+"prog": "craftDiamondHelmetTask",
+"rep": "craftWoodenPickaxeProperly",
+"rep_task": "Craft wooden pickaxe",
+"fk": "placeItem:crafting_table:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "added",
+"task": "Mine 5 deepslate gold ore",
+"prog": "mineFiveDeepslateGoldOre",
+"rep": "mineFiveDeepslateGoldOre",
+"rep_task": "Mine 5 deepslate gold ore",
+"fk": "mineBlock:deepslate_gold_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "dedup",
+"task": "Craft diamond chestplate",
+"prog": "craftDiamondChestplate",
+"rep": "craftWoodenPickaxeProperly",
+"rep_task": "Craft wooden pickaxe",
+"fk": "placeItem:crafting_table:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "dedup",
+"task": "Place a chest",
+"prog": "placeMyChest",
+"rep": "placeChestAroundMe",
+"rep_task": "Place a chest",
+"fk": "placeItem:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "added",
+"task": "Open unknown chest",
+"prog": "openUnknownChestTask",
+"rep": "openUnknownChestTask",
+"rep_task": "Open unknown chest",
+"fk": "checkItemInsideChest:*:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "skipped",
+"task": "Deposit useless items into the chest at (75, -3, -14)",
+"prog": "depositJunkToTargetChest",
+"rep": null,
+"rep_task": null,
+"fk": "depositItemIntoChest:(75,__3,__14):*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "added",
+"task": "Mine 5 deepslate diamonds",
+"prog": "mineFiveDeepslateDiamondsTask",
+"rep": "mineFiveDeepslateDiamondsTask",
+"rep_task": "Mine 5 deepslate diamonds",
+"fk": "mineBlock:deepslate_diamonds:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "dedup",
+"task": "Craft diamond boots",
+"prog": "craftDiamondBootsTask",
+"rep": "craftWoodenPickaxeProperly",
+"rep_task": "Craft wooden pickaxe",
+"fk": "placeItem:crafting_table:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "dedup",
+"task": "Mine 5 deepslate diamond ore",
+"prog": "mineDeepslateDiamondsTask",
+"rep": "mineFiveDeepslateDiamonds",
+"rep_task": "Mine 5 deepslate diamond ore",
+"fk": "mineBlock:deepslate_diamond_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "added",
+"task": "Mine 5 deepslate iron ore",
+"prog": "mineFiveDeepslateIronOre",
+"rep": "mineFiveDeepslateIronOre",
+"rep_task": "Mine 5 deepslate iron ore",
+"fk": "mineBlock:deepslate_iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "added",
+"task": "Mine 5 gravel",
+"prog": "mineFiveGravel",
+"rep": "mineFiveGravel",
+"rep_task": "Mine 5 gravel",
+"fk": "mineBlock:gravel:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "dedup",
+"task": "Craft diamond sword",
+"prog": "craftDiamondSwordTask",
+"rep": "craftWoodenPickaxeProperly",
+"rep_task": "Craft wooden pickaxe",
+"fk": "placeItem:crafting_table:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "dedup",
+"task": "Kill 5 chicken",
+"prog": "killFiveChickens",
+"rep": "killThreeChickensSafely",
+"rep_task": "Kill 3 chicken",
+"fk": "killMob:chicken:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "added",
+"task": "Kill 1 sheep",
+"prog": "killOneSheep",
+"rep": "killOneSheep",
+"rep_task": "Kill 1 sheep",
+"fk": "killMob:sheep:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "added",
+"task": "Craft 1 lightning rod",
+"prog": "craftLightningRodTask",
+"rep": "craftLightningRodTask",
+"rep_task": "Craft 1 lightning rod",
+"fk": "craftItem:lightning_rod:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-08_17-04-48",
+"kind": "added",
+"task": "Craft iron chestplate",
+"prog": "craftIronChestplateTask",
+"rep": "craftIronChestplateTask",
+"rep_task": "Craft iron chestplate",
+"fk": "smeltItem:iron_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Mine 1 wood log",
+"prog": "mineOneWoodLog",
+"rep": "mineOneWoodLog",
+"rep_task": "Mine 1 wood log",
+"fk": "mineBlock:oak_log:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Craft 4 oak_planks",
+"prog": "makeFourOakPlanks",
+"rep": "makeFourOakPlanks",
+"rep_task": "Craft 4 oak_planks",
+"fk": "craftItem:oak_planks:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Craft wooden pickaxe",
+"prog": "craftWoodenPickaxeTask",
+"rep": "craftWoodenPickaxeTask",
+"rep_task": "Craft wooden pickaxe",
+"fk": "craft:wooden_pickaxe:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Mine 5 cobblestone",
+"prog": "mineFiveCobblestoneTask",
+"rep": "mineFiveCobblestoneTask",
+"rep_task": "Mine 5 cobblestone",
+"fk": "mineBlock:cobblestone:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Mine 5 coal ore",
+"prog": "mineFiveCoalOreTask",
+"rep": "mineFiveCoalOreTask",
+"rep_task": "Mine 5 coal ore",
+"fk": "mineBlock:coal_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Mine 5 iron ore",
+"prog": "mineFiveIronWithStonePickaxeTask",
+"rep": "mineFiveIronWithStonePickaxeTask",
+"rep_task": "Mine 5 iron ore",
+"fk": "mineBlock:iron_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Craft iron pickaxe",
+"prog": "craftIronPickaxeTaskFixed",
+"rep": "craftIronPickaxeTaskFixed",
+"rep_task": "Craft iron pickaxe",
+"fk": "smeltItem:iron_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Mine 5 iron ore",
+"prog": "mineIronOreTask",
+"rep": "mineFiveIronWithStonePickaxeTask",
+"rep_task": "Mine 5 iron ore",
+"fk": "mineBlock:iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Craft iron sword",
+"prog": "craftIronSwordTask",
+"rep": "craftIronSwordTask",
+"rep_task": "Craft iron sword",
+"fk": "placeItem:crafting_table:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Smelt 5 raw_iron",
+"prog": "smeltFiveRawIronTask",
+"rep": "craftIronPickaxeTaskFixed",
+"rep_task": "Craft iron pickaxe",
+"fk": "smeltItem:iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Craft iron helmet",
+"prog": "craftIronHelmetTask",
+"rep": "craftIronSwordTask",
+"rep_task": "Craft iron sword",
+"fk": "placeItem:crafting_table:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Mine 5 coal ore",
+"prog": "mineCoalTask",
+"rep": "mineFiveCoalOreTask",
+"rep_task": "Mine 5 coal ore",
+"fk": "mineBlock:coal_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Mine 3 diamond ore",
+"prog": "mineThreeDiamondOreTask",
+"rep": "mineThreeDiamondOreTask",
+"rep_task": "Mine 3 diamond ore",
+"fk": "mineBlock:diamond_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Mine 3 diamond ore",
+"prog": "mineThreeDiamondsTask",
+"rep": "mineThreeDiamondOreTask",
+"rep_task": "Mine 3 diamond ore",
+"fk": "mineBlock:diamond_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Mine 5 diamond ore",
+"prog": "mineFiveDiamondOreTask",
+"rep": "mineThreeDiamondOreTask",
+"rep_task": "Mine 3 diamond ore",
+"fk": "mineBlock:diamond_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Craft diamond sword",
+"prog": "craftDiamondSwordTask",
+"rep": "craftIronSwordTask",
+"rep_task": "Craft iron sword",
+"fk": "placeItem:crafting_table:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Smelt 5 raw_iron",
+"prog": "smeltFiveRawIronTask",
+"rep": "craftIronPickaxeTaskFixed",
+"rep_task": "Craft iron pickaxe",
+"fk": "smeltItem:iron_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Craft iron chestplate",
+"prog": "craftIronChestplateTask",
+"rep": "craftIronChestplateTask",
+"rep_task": "Craft iron chestplate",
+"fk": "craft:iron_chestplate:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Craft 1 bucket",
+"prog": "craftOneBucketTask",
+"rep": "craftOneBucketTask",
+"rep_task": "Craft 1 bucket",
+"fk": "craftItem:bucket:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Craft diamond pickaxe",
+"prog": "craftDiamondPickaxeTask",
+"rep": "craftIronSwordTask",
+"rep_task": "Craft iron sword",
+"fk": "placeItem:crafting_table:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Mine 5 iron ore",
+"prog": "mineFiveIronOreTask",
+"rep": "mineFiveIronWithStonePickaxeTask",
+"rep_task": "Mine 5 iron ore",
+"fk": "mineBlock:iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Smelt 8 raw_iron",
+"prog": "smeltEightRawIronTask",
+"rep": "craftIronPickaxeTaskFixed",
+"rep_task": "Craft iron pickaxe",
+"fk": "smeltItem:iron_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Craft iron leggings",
+"prog": "craftIronLeggingsTask",
+"rep": "craftIronSwordTask",
+"rep_task": "Craft iron sword",
+"fk": "placeItem:crafting_table:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Craft iron axe",
+"prog": "craftIronAxeReusableTask",
+"rep": "craftIronSwordTask",
+"rep_task": "Craft iron sword",
+"fk": "placeItem:crafting_table:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Smelt 7 raw_copper",
+"prog": "smeltSevenRawCopperTask",
+"rep": "smeltSevenRawCopperTask",
+"rep_task": "Smelt 7 raw_copper",
+"fk": "smeltItem:copper_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Craft 1 iron pickaxe",
+"prog": "craftOneIronPickaxeTask",
+"rep": "craftOneIronPickaxeTask",
+"rep_task": "Craft 1 iron pickaxe",
+"fk": "craftItem:iron_pickaxe:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Craft 1 iron sword",
+"prog": "craftOneIronSwordTask",
+"rep": "craftOneIronSwordTask",
+"rep_task": "Craft 1 iron sword",
+"fk": "craftItem:iron_sword:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Craft iron boots",
+"prog": "craftIronBootsTask",
+"rep": "craftIronSwordTask",
+"rep_task": "Craft iron sword",
+"fk": "placeItem:crafting_table:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Craft diamond chestplate",
+"prog": "craftDiamondChestplateTask",
+"rep": "craftIronSwordTask",
+"rep_task": "Craft iron sword",
+"fk": "placeItem:crafting_table:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Mine 5 diamond ore",
+"prog": "mineFiveDiamondOreTask",
+"rep": "mineThreeDiamondOreTask",
+"rep_task": "Mine 3 diamond ore",
+"fk": "mineBlock:diamond_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Mine 5 diamond ore",
+"prog": "mineFiveDiamondOreTask",
+"rep": "mineThreeDiamondOreTask",
+"rep_task": "Mine 3 diamond ore",
+"fk": "mineBlock:diamond_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Craft 1 diamond helmet",
+"prog": "craftDiamondHelmetTask",
+"rep": "craftDiamondHelmetTask",
+"rep_task": "Craft 1 diamond helmet",
+"fk": "craftItem:diamond_helmet:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Craft iron chestplate",
+"prog": "ensureIronChestplateTask",
+"rep": "ensureIronChestplateTask",
+"rep_task": "Craft iron chestplate",
+"fk": "craftIronChestplateTask:*:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Equip iron boots",
+"prog": "equipIronBootsTask",
+"rep": "equipIronBootsTask",
+"rep_task": "Equip iron boots",
+"fk": "equip:iron_boots:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Smelt 5 raw_gold",
+"prog": "smeltFiveRawGoldTaskFixed",
+"rep": "smeltFiveRawGoldTaskFixed",
+"rep_task": "Smelt 5 raw_gold",
+"fk": "smeltItem:gold_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Mine 5 deepslate diamond ore",
+"prog": "mineFiveDeepslateDiamondOreTask",
+"rep": "mineFiveDeepslateDiamondOreTask",
+"rep_task": "Mine 5 deepslate diamond ore",
+"fk": "mineBlock:deepslate_diamond_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Craft 1 diamond leggings",
+"prog": "craftDiamondLeggingsTask",
+"rep": "craftDiamondLeggingsTask",
+"rep_task": "Craft 1 diamond leggings",
+"fk": "craftItem:diamond_leggings:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Craft iron boots",
+"prog": "craftIronBootsTask",
+"rep": "craftIronBootsTask",
+"rep_task": "Craft iron boots",
+"fk": "craft:iron_boots:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Place a chest",
+"prog": "placeChestAroundMeTask",
+"rep": "placeChestAroundMeTask",
+"rep_task": "Place a chest",
+"fk": "placeItem:chest:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Craft iron leggings",
+"prog": "craftIronLeggingsTask",
+"rep": "craftIronLeggingsTask",
+"rep_task": "Craft iron leggings",
+"fk": "countItem:iron_leggings:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "skipped",
+"task": "Deposit useless items into the chest at (93, -16, -2)",
+"prog": "depositUselessItemsToChest93",
+"rep": null,
+"rep_task": null,
+"fk": "depositItemIntoChest:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Craft 1 iron pickaxe",
+"prog": "completeIronPickaxeTask",
+"rep": "craftOneIronPickaxeTask",
+"rep_task": "Craft 1 iron pickaxe",
+"fk": "craftItem:iron_pickaxe:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Craft iron pickaxe",
+"prog": "craftIronPickaxeFromInventoryTask",
+"rep": "craftIronPickaxeFromInventoryTask",
+"rep_task": "Craft iron pickaxe",
+"fk": "chat:task_finished,_but_no_iron_pickaxe_is_in_inventory_yet.:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Craft iron pickaxe",
+"prog": "craftIronPickaxeFromInventoryTask",
+"rep": "craftIronPickaxeFromInventoryTask",
+"rep_task": "Craft iron pickaxe",
+"fk": "chat:task_finished,_but_no_iron_pickaxe_is_in_inventory_yet.:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Equip diamond chestplate",
+"prog": "equipDiamondChestplateTask",
+"rep": "equipDiamondChestplateTask",
+"rep_task": "Equip diamond chestplate",
+"fk": "chat:attempted_to_equip_the_diamond_chestplate.:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Smelt 6 raw_iron",
+"prog": "smeltSixRawIronTask",
+"rep": "craftIronPickaxeTaskFixed",
+"rep_task": "Craft iron pickaxe",
+"fk": "smeltItem:iron_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Equip diamond helmet",
+"prog": "equipDiamondHelmetTask",
+"rep": "equipDiamondHelmetTask",
+"rep_task": "Equip diamond helmet",
+"fk": "chat:attempted_to_equip_diamond_helmet.:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Craft iron axe",
+"prog": "craftIronAxeTaskReused",
+"rep": "craftIronAxeTaskReused",
+"rep_task": "Craft iron axe",
+"fk": "countItem:iron_axe:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Craft iron leggings",
+"prog": "craftIronLeggingsCompletionTask",
+"rep": "craftIronLeggingsCompletionTask",
+"rep_task": "Craft iron leggings",
+"fk": "craftIronLeggingsTask:*:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Smelt 3 raw_gold",
+"prog": "smeltThreeRawGoldTask",
+"rep": "smeltFiveRawGoldTaskFixed",
+"rep_task": "Smelt 5 raw_gold",
+"fk": "smeltItem:gold_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Craft 1 diamond helmet",
+"prog": "craftDiamondHelmetWithMining",
+"rep": "craftDiamondHelmetTask",
+"rep_task": "Craft 1 diamond helmet",
+"fk": "craftItem:diamond_helmet:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Mine 5 deepslate diamond ore",
+"prog": "mineDeepslateDiamondOreTask",
+"rep": "mineFiveDeepslateDiamondOreTask",
+"rep_task": "Mine 5 deepslate diamond ore",
+"fk": "mineBlock:deepslate_diamond_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Equip diamond boots",
+"prog": "equipDiamondBootsTask",
+"rep": "craftIronSwordTask",
+"rep_task": "Craft iron sword",
+"fk": "placeItem:crafting_table:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Mine 5 deepslate diamond ore",
+"prog": "mineDeepslateDiamondOreTask",
+"rep": "mineFiveDeepslateDiamondOreTask",
+"rep_task": "Mine 5 deepslate diamond ore",
+"fk": "mineBlock:deepslate_diamond_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Mine 5 redstone ore",
+"prog": "mineFiveRedstoneOreTask",
+"rep": "mineFiveRedstoneOreTask",
+"rep_task": "Mine 5 redstone ore",
+"fk": "mineBlock:redstone_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Open chest",
+"prog": "openChestTask",
+"rep": "openChestTask",
+"rep_task": "Open chest",
+"fk": "checkItemInsideChest:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Smelt 7 raw_gold",
+"prog": "smeltSevenRawGoldTask",
+"rep": "smeltFiveRawGoldTaskFixed",
+"rep_task": "Smelt 5 raw_gold",
+"fk": "smeltItem:gold_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Mine 5 deepslate gold ore",
+"prog": "mineFiveDeepslateGoldOreTask",
+"rep": "mineFiveDeepslateGoldOreTask",
+"rep_task": "Mine 5 deepslate gold ore",
+"fk": "mineBlock:deepslate_gold_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Equip iron chestplate",
+"prog": "equipIronChestplateTask",
+"rep": "equipIronChestplateTask",
+"rep_task": "Equip iron chestplate",
+"fk": "chat:attempted_to_equip_the_iron_chestplate.:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Equip diamond chestplate",
+"prog": "equipDiamondChestplateTask",
+"rep": "equipDiamondChestplateTask",
+"rep_task": "Equip diamond chestplate",
+"fk": "chat:attempted_to_equip_the_diamond_chestplate.:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Mine 5 deepslate gold ore",
+"prog": "mineDeepslateGoldOreDirectly",
+"rep": "mineFiveDeepslateGoldOreTask",
+"rep_task": "Mine 5 deepslate gold ore",
+"fk": "mineBlock:deepslate_gold_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Craft 1 diamond leggings",
+"prog": "craftDiamondLeggings",
+"rep": "craftDiamondLeggingsTask",
+"rep_task": "Craft 1 diamond leggings",
+"fk": "craftItem:diamond_leggings:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Craft 1 iron pickaxe",
+"prog": "ensureIronPickaxeTask",
+"rep": "craftOneIronPickaxeTask",
+"rep_task": "Craft 1 iron pickaxe",
+"fk": "craftItem:iron_pickaxe:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Smelt 18 raw_gold",
+"prog": "smeltEighteenRawGoldTask",
+"rep": "smeltFiveRawGoldTaskFixed",
+"rep_task": "Smelt 5 raw_gold",
+"fk": "smeltItem:gold_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Craft 1 iron helmet",
+"prog": "craftOneIronHelmetTask",
+"rep": "craftOneIronHelmetTask",
+"rep_task": "Craft 1 iron helmet",
+"fk": "craftItem:iron_helmet:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Craft diamond sword",
+"prog": "craftDiamondSwordTask",
+"rep": "craftDiamondSwordTask",
+"rep_task": "Craft diamond sword",
+"fk": "craftItem:stick:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Craft diamond boots",
+"prog": "craftDiamondBootsTask",
+"rep": "craftIronSwordTask",
+"rep_task": "Craft iron sword",
+"fk": "placeItem:crafting_table:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Equip diamond_leggings",
+"prog": "equipDiamondLeggingsTask",
+"rep": "equipDiamondLeggingsTask",
+"rep_task": "Equip diamond_leggings",
+"fk": "chat:attempted_to_equip_diamond_leggings.:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Craft iron axe",
+"prog": "craftIronAxeCompletionTask",
+"rep": "craftIronSwordTask",
+"rep_task": "Craft iron sword",
+"fk": "placeItem:crafting_table:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Equip diamond_helmet",
+"prog": "equipDiamondHelmetTask",
+"rep": "equipDiamondHelmetTask",
+"rep_task": "Equip diamond helmet",
+"fk": "chat:diamond_helmet_equipped_successfully.:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Smelt 6 raw_iron",
+"prog": "smeltSixRawIronTask",
+"rep": "craftIronPickaxeTaskFixed",
+"rep_task": "Craft iron pickaxe",
+"fk": "smeltItem:iron_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Smelt 6 raw_iron",
+"prog": "smeltRawIronTask",
+"rep": "craftIronPickaxeTaskFixed",
+"rep_task": "Craft iron pickaxe",
+"fk": "smeltItem:iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Craft diamond leggings",
+"prog": "craftDiamondLeggingsFromInventoryTask",
+"rep": "craftIronSwordTask",
+"rep_task": "Craft iron sword",
+"fk": "placeItem:crafting_table:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Equip iron boots",
+"prog": "equipIronBootsTask",
+"rep": "equipIronBootsTask",
+"rep_task": "Equip iron boots",
+"fk": "equip:iron_boots:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Craft diamond boots",
+"prog": "craftDiamondBootsTask",
+"rep": "craftIronSwordTask",
+"rep_task": "Craft iron sword",
+"fk": "placeItem:crafting_table:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Craft diamond sword",
+"prog": "craftDiamondSwordIfNeededTask",
+"rep": "craftDiamondSwordIfNeededTask",
+"rep_task": "Craft diamond sword",
+"fk": "craftDiamondSwordTask:*:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Smelt 18 raw_gold",
+"prog": "smeltEighteenRawGoldTask",
+"rep": "smeltFiveRawGoldTaskFixed",
+"rep_task": "Smelt 5 raw_gold",
+"fk": "smeltItem:gold_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Equip diamond boots",
+"prog": "equipDiamondBootsTask",
+"rep": "equipDiamondBootsTask",
+"rep_task": "Equip diamond boots",
+"fk": "equip:diamond_boots:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Craft iron sword",
+"prog": "craftIronSwordIfNeededTask",
+"rep": "craftIronSwordIfNeededTask",
+"rep_task": "Craft iron sword",
+"fk": "chat:finished,_but_iron_sword_is_still_missing.:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "added",
+"task": "Mine 5 lapis_ore",
+"prog": "mineFiveLapisOreTask",
+"rep": "mineFiveLapisOreTask",
+"rep_task": "Mine 5 lapis_ore",
+"fk": "mineBlock:lapis_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Smelt 18 raw_gold",
+"prog": "smeltRawGold18Task",
+"rep": "smeltFiveRawGoldTaskFixed",
+"rep_task": "Smelt 5 raw_gold",
+"fk": "smeltItem:gold_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_02-43-00",
+"kind": "dedup",
+"task": "Craft diamond axe",
+"prog": "craftDiamondAxeTask",
+"rep": "craftDiamondSwordTask",
+"rep_task": "Craft diamond sword",
+"fk": "craftItem:stick:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Mine 1 wood log",
+"prog": "mineOneWoodLog",
+"rep": "mineOneWoodLog",
+"rep_task": "Mine 1 wood log",
+"fk": "mineBlock:oak_log:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Craft 4 oak planks",
+"prog": "craftOakPlanks",
+"rep": "craftOakPlanks",
+"rep_task": "Craft 4 oak planks",
+"fk": "craftItem:oak_planks:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Mine 5 cobblestone",
+"prog": "mineFiveCobblestoneTask",
+"rep": "mineFiveCobblestoneTask",
+"rep_task": "Mine 5 cobblestone",
+"fk": "mineBlock:cobblestone:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Mine 5 iron ore",
+"prog": "mineFiveIronOreTask",
+"rep": "mineFiveIronOreTask",
+"rep_task": "Mine 5 iron ore",
+"fk": "mineBlock:iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Craft 1 iron pickaxe",
+"prog": "craftOneIronPickaxeTask",
+"rep": "craftOneIronPickaxeTask",
+"rep_task": "Craft 1 iron pickaxe",
+"fk": "craftItem:iron_pickaxe:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Craft 1 shield",
+"prog": "craftShieldTask",
+"rep": "craftShieldTask",
+"rep_task": "Craft 1 shield",
+"fk": "craftItem:shield:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Smelt 6 raw_iron",
+"prog": "smeltSixRawIronTask",
+"rep": "smeltSixRawIronTask",
+"rep_task": "Smelt 6 raw_iron",
+"fk": "smeltItem:iron_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Craft 1 diamond pickaxe",
+"prog": "craftDiamondPickaxeTask",
+"rep": "craftDiamondPickaxeTask",
+"rep_task": "Craft 1 diamond pickaxe",
+"fk": "craftItem:diamond_pickaxe:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Craft 1 iron axe",
+"prog": "craftIronAxeTaskFixed",
+"rep": "craftIronAxeTaskFixed",
+"rep_task": "Craft 1 iron axe",
+"fk": "craftItem:iron_axe:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Mine 5 deepslate_gold_ore",
+"prog": "mineFiveDeepslateGoldOreTask",
+"rep": "mineFiveDeepslateGoldOreTask",
+"rep_task": "Mine 5 deepslate_gold_ore",
+"fk": "mineBlock:deepslate_gold_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Craft 1 iron sword",
+"prog": "craftIronSwordTask",
+"rep": "craftIronSwordTask",
+"rep_task": "Craft 1 iron sword",
+"fk": "craftItem:iron_sword:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Mine 5 gold ore",
+"prog": "mineFiveGoldOreTask",
+"rep": "mineFiveGoldOreTask",
+"rep_task": "Mine 5 gold ore",
+"fk": "mineBlock:gold_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Mine 5 deepslate_iron_ore",
+"prog": "mineFiveDeepslateIronOreTask",
+"rep": "mineFiveDeepslateIronOreTask",
+"rep_task": "Mine 5 deepslate_iron_ore",
+"fk": "mineBlock:deepslate_iron_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "dedup",
+"task": "Smelt 10 raw_iron",
+"prog": "smeltTenRawIronTask",
+"rep": "smeltSixRawIronTask",
+"rep_task": "Smelt 6 raw_iron",
+"fk": "smeltItem:iron_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "dedup",
+"task": "Mine 5 deepslate_iron_ore",
+"prog": "mineDeepslateIronOre5Task",
+"rep": "mineFiveDeepslateIronOreTask",
+"rep_task": "Mine 5 deepslate_iron_ore",
+"fk": "mineBlock:deepslate_iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Mine 3 deepslate diamond ore",
+"prog": "mineThreeDeepslateDiamondOreTask",
+"rep": "mineThreeDeepslateDiamondOreTask",
+"rep_task": "Mine 3 deepslate diamond ore",
+"fk": "mineBlock:deepslate_diamond_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Craft 1 diamond sword",
+"prog": "craftDiamondSwordProperly",
+"rep": "craftDiamondSwordProperly",
+"rep_task": "Craft 1 diamond sword",
+"fk": "craftItem:diamond_sword:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Craft 1 iron helmet",
+"prog": "craftIronHelmetTask",
+"rep": "craftIronHelmetTask",
+"rep_task": "Craft 1 iron helmet",
+"fk": "craftItem:iron_helmet:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Craft 1 iron chestplate",
+"prog": "craftIronChestplateTaskFixed",
+"rep": "craftIronChestplateTaskFixed",
+"rep_task": "Craft 1 iron chestplate",
+"fk": "craftItem:iron_chestplate:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "dedup",
+"task": "Smelt 5 raw_iron",
+"prog": "smeltFiveRawIronTask",
+"rep": "smeltSixRawIronTask",
+"rep_task": "Smelt 6 raw_iron",
+"fk": "smeltItem:iron_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Craft 1 gold helmet",
+"prog": "craftGoldHelmetTaskFixed",
+"rep": "craftGoldHelmetTaskFixed",
+"rep_task": "Craft 1 gold helmet",
+"fk": "craftItem:gold_helmet:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Craft 1 iron boots",
+"prog": "craftIronBootsTask",
+"rep": "craftIronBootsTask",
+"rep_task": "Craft 1 iron boots",
+"fk": "craftItem:iron_boots:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "dedup",
+"task": "Craft 1 gold helmet",
+"prog": "craftGoldHelmetTask",
+"rep": "craftGoldHelmetTaskFixed",
+"rep_task": "Craft 1 gold helmet",
+"fk": "craftItem:gold_helmet:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "dedup",
+"task": "Smelt 5 raw_iron",
+"prog": "smeltFiveRawIronTask",
+"rep": "smeltSixRawIronTask",
+"rep_task": "Smelt 6 raw_iron",
+"fk": "smeltItem:iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Mine 5 diamond ore",
+"prog": "mineFiveDiamondOreTask",
+"rep": "mineFiveDiamondOreTask",
+"rep_task": "Mine 5 diamond ore",
+"fk": "mineBlock:diamond_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "dedup",
+"task": "Smelt 5 raw_iron",
+"prog": "smeltFiveRawIronTask",
+"rep": "smeltSixRawIronTask",
+"rep_task": "Smelt 6 raw_iron",
+"fk": "smeltItem:iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "dedup",
+"task": "Craft 1 iron pickaxe",
+"prog": "craftOneIronPickaxe",
+"rep": "craftOneIronPickaxeTask",
+"rep_task": "Craft 1 iron pickaxe",
+"fk": "craftItem:iron_pickaxe:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Craft 1 diamond helmet",
+"prog": "craftDiamondHelmetTask",
+"rep": "craftDiamondHelmetTask",
+"rep_task": "Craft 1 diamond helmet",
+"fk": "craftItem:diamond_helmet:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Craft 1 diamond chestplate",
+"prog": "craftDiamondChestplateTask",
+"rep": "craftDiamondChestplateTask",
+"rep_task": "Craft 1 diamond chestplate",
+"fk": "craftItem:diamond_chestplate:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "dedup",
+"task": "Craft 1 iron chestplate",
+"prog": "craftIronChestplateIfNeeded",
+"rep": "craftIronChestplateTaskFixed",
+"rep_task": "Craft 1 iron chestplate",
+"fk": "craftItem:iron_chestplate:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Equip iron_chestplate",
+"prog": "equipIronChestplateTask",
+"rep": "equipIronChestplateTask",
+"rep_task": "Equip iron_chestplate",
+"fk": "chat:attempted_to_equip_iron_chestplate,_but_it_does_not_appear_to_be_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Equip iron_chestplate",
+"prog": "equipIronChestplateReusable",
+"rep": "equipIronChestplateReusable",
+"rep_task": "Equip iron_chestplate",
+"fk": "chat:task_complete:_iron_chestplate_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "dedup",
+"task": "Craft 1 iron axe",
+"prog": "craftOneIronAxe",
+"rep": "craftIronAxeTaskFixed",
+"rep_task": "Craft 1 iron axe",
+"fk": "craftItem:iron_axe:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Equip diamond_chestplate",
+"prog": "equipDiamondChestplateTask",
+"rep": "equipDiamondChestplateTask",
+"rep_task": "Equip diamond_chestplate",
+"fk": "chat:attempted_to_equip_diamond_chestplate,_but_verification_failed.:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "dedup",
+"task": "Craft 1 iron axe",
+"prog": "craftOneIronAxe",
+"rep": "craftIronAxeTaskFixed",
+"rep_task": "Craft 1 iron axe",
+"fk": "craftItem:iron_axe:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "dedup",
+"task": "Craft 1 diamond helmet",
+"prog": "completeDiamondHelmetTask",
+"rep": "craftDiamondHelmetTask",
+"rep_task": "Craft 1 diamond helmet",
+"fk": "craftItem:diamond_helmet:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Place a chest",
+"prog": "placeChestTask",
+"rep": "placeChestTask",
+"rep_task": "Place a chest",
+"fk": "placeItem:chest:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "skipped",
+"task": "Deposit useless items into the chest at (63, 63, 0)",
+"prog": "depositUselessItemsToChestTask",
+"rep": null,
+"rep_task": null,
+"fk": "depositItemIntoChest:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "dedup",
+"task": "Equip iron_chestplate",
+"prog": "equipIronChestplateFromChest",
+"rep": "equipIronChestplateReusable",
+"rep_task": "Equip iron_chestplate",
+"fk": "chat:task_complete:_iron_chestplate_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Equip diamond_chestplate",
+"prog": "equipDiamondChestplate",
+"rep": "equipDiamondChestplate",
+"rep_task": "Equip diamond_chestplate",
+"fk": "equip:diamond_chestplate:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "dedup",
+"task": "Equip diamond_chestplate",
+"prog": "equipDiamondChestplateTask",
+"rep": "equipDiamondChestplateTask",
+"rep_task": "Equip diamond_chestplate",
+"fk": "chat:attempted_to_equip_diamond_chestplate,_but_verification_failed.:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "dedup",
+"task": "Craft 1 iron helmet",
+"prog": "craftIronHelmetFromInventory",
+"rep": "craftIronHelmetTask",
+"rep_task": "Craft 1 iron helmet",
+"fk": "craftItem:iron_helmet:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "dedup",
+"task": "Craft 1 iron sword",
+"prog": "craftOneIronSword",
+"rep": "craftIronSwordTask",
+"rep_task": "Craft 1 iron sword",
+"fk": "craftItem:iron_sword:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Take 1 iron_boots from chest",
+"prog": "takeIronBootsFromChest",
+"rep": "takeIronBootsFromChest",
+"rep_task": "Take 1 iron_boots from chest",
+"fk": "chat:could_not_confirm_iron_boots_in_inventory_after_withdrawal.:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "dedup",
+"task": "Craft 1 iron helmet",
+"prog": "craftIronHelmetWithSmeltingTask",
+"rep": "craftIronHelmetTask",
+"rep_task": "Craft 1 iron helmet",
+"fk": "craftItem:iron_helmet:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Equip iron_boots",
+"prog": "equipIronBootsTask",
+"rep": "equipIronBootsTask",
+"rep_task": "Equip iron_boots",
+"fk": "chat:attempted_to_equip_iron_boots,_but_verification_failed.:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Craft 1 bucket",
+"prog": "craftBucketTaskFixed",
+"rep": "craftBucketTaskFixed",
+"rep_task": "Craft 1 bucket",
+"fk": "craftItem:bucket:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Take 1 iron_helmet from chest",
+"prog": "takeIronHelmetFromChestTask",
+"rep": "takeIronHelmetFromChestTask",
+"rep_task": "Take 1 iron_helmet from chest",
+"fk": "getItemFromChest:*:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "dedup",
+"task": "Craft 1 diamond sword",
+"prog": "completeDiamondSwordTask",
+"rep": "craftDiamondSwordProperly",
+"rep_task": "Craft 1 diamond sword",
+"fk": "craftItem:diamond_sword:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Smelt 5 raw_gold",
+"prog": "smeltFiveRawGoldTask",
+"rep": "smeltFiveRawGoldTask",
+"rep_task": "Smelt 5 raw_gold",
+"fk": "smeltItem:gold_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "dedup",
+"task": "Craft 1 iron sword",
+"prog": "completeIronSwordTask",
+"rep": "craftIronSwordTask",
+"rep_task": "Craft 1 iron sword",
+"fk": "craftItem:iron_sword:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Equip diamond_helmet",
+"prog": "equipDiamondHelmetTask",
+"rep": "equipDiamondHelmetTask",
+"rep_task": "Equip diamond_helmet",
+"fk": "chat:attempted_to_equip_diamond_helmet,_but_verification_failed.:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Mine 5 coal_ore",
+"prog": "mineFiveCoalOreTask",
+"rep": "mineFiveCoalOreTask",
+"rep_task": "Mine 5 coal_ore",
+"fk": "mineBlock:coal_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "dedup",
+"task": "Craft 1 diamond pickaxe",
+"prog": "ensureDiamondPickaxeTask",
+"rep": "craftDiamondPickaxeTask",
+"rep_task": "Craft 1 diamond pickaxe",
+"fk": "craftItem:diamond_pickaxe:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "dedup",
+"task": "Craft 1 iron pickaxe",
+"prog": "completeIronPickaxeTask",
+"rep": "craftOneIronPickaxeTask",
+"rep_task": "Craft 1 iron pickaxe",
+"fk": "craftItem:iron_pickaxe:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "dedup",
+"task": "Craft 1 diamond helmet",
+"prog": "craftDiamondHelmet",
+"rep": "craftDiamondHelmetTask",
+"rep_task": "Craft 1 diamond helmet",
+"fk": "craftItem:diamond_helmet:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Equip diamond_helmet",
+"prog": "equipDiamondHelmetTask",
+"rep": "equipDiamondHelmetTask",
+"rep_task": "Equip diamond_helmet",
+"fk": "chat:task_complete:_diamond_helmet_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "dedup",
+"task": "Craft 1 diamond sword",
+"prog": "craftDiamondSwordTask",
+"rep": "craftDiamondSwordProperly",
+"rep_task": "Craft 1 diamond sword",
+"fk": "craftItem:diamond_sword:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "dedup",
+"task": "Craft 1 shield",
+"prog": "craftShield",
+"rep": "craftShieldTask",
+"rep_task": "Craft 1 shield",
+"fk": "craftItem:shield:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Mine 5 lapis lazuli",
+"prog": "mineFiveLapisLazuliTask",
+"rep": "mineFiveLapisLazuliTask",
+"rep_task": "Mine 5 lapis lazuli",
+"fk": "mineBlock:lapis_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "added",
+"task": "Craft 1 clock",
+"prog": "craftClockTask",
+"rep": "craftClockTask",
+"rep_task": "Craft 1 clock",
+"fk": "craftItem:clock:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "dedup",
+"task": "Place a chest",
+"prog": "placeChest",
+"rep": "placeChestTask",
+"rep_task": "Place a chest",
+"fk": "placeItem:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-04-12_11-00-21",
+"kind": "skipped",
+"task": "Deposit useless items into the chest at (-57, 3, -169)",
+"prog": "depositUselessItemsTask",
+"rep": null,
+"rep_task": null,
+"fk": "inventoryUsed:*:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Mine 1 wood log",
+"prog": "mineOneWoodLog",
+"rep": "mineOneWoodLog",
+"rep_task": "Mine 1 wood log",
+"fk": "mineBlock:oak_log:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Craft 12 oak_planks",
+"prog": "craftTwelveOakPlanks",
+"rep": "craftTwelveOakPlanks",
+"rep_task": "Craft 12 oak_planks",
+"fk": "craftItem:oak_planks:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Craft 1 wooden_pickaxe",
+"prog": "craftWoodenPickaxe",
+"rep": "craftWoodenPickaxe",
+"rep_task": "Craft 1 wooden_pickaxe",
+"fk": "craftItem:wooden_pickaxe:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Mine 5 cobblestone",
+"prog": "mineFiveCobblestone",
+"rep": "mineFiveCobblestone",
+"rep_task": "Mine 5 cobblestone",
+"fk": "mineBlock:cobblestone:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Mine 5 iron ore",
+"prog": "mineFiveIronOre",
+"rep": "mineFiveIronOre",
+"rep_task": "Mine 5 iron ore",
+"fk": "mineBlock:iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Craft iron pickaxe",
+"prog": "craftIronPickaxe",
+"rep": "craftIronPickaxe",
+"rep_task": "Craft iron pickaxe",
+"fk": "craftItem:iron_pickaxe:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "dedup",
+"task": "Mine 5 iron ore",
+"prog": "mineFiveIronOreTask",
+"rep": "mineFiveIronOre",
+"rep_task": "Mine 5 iron ore",
+"fk": "mineBlock:iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Craft 1 iron sword",
+"prog": "craftOneIronSword",
+"rep": "craftOneIronSword",
+"rep_task": "Craft 1 iron sword",
+"fk": "craftItem:iron_sword:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Craft 1 iron_axe",
+"prog": "craftOneIronAxe",
+"rep": "craftOneIronAxe",
+"rep_task": "Craft 1 iron_axe",
+"fk": "craftItem:iron_axe:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Smelt 2 raw_iron",
+"prog": "smeltTwoRawIron",
+"rep": "smeltTwoRawIron",
+"rep_task": "Smelt 2 raw_iron",
+"fk": "smeltItem:iron_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Mine 5 copper ore",
+"prog": "mineFiveCopperOre",
+"rep": "mineFiveCopperOre",
+"rep_task": "Mine 5 copper ore",
+"fk": "mineBlock:copper_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "dedup",
+"task": "Mine 5 iron ore",
+"prog": "mineIronOreTask",
+"rep": "mineFiveIronOre",
+"rep_task": "Mine 5 iron ore",
+"fk": "mineBlock:iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Smelt 5 raw_copper",
+"prog": "smeltFiveRawCopperTask",
+"rep": "smeltFiveRawCopperTask",
+"rep_task": "Smelt 5 raw_copper",
+"fk": "smeltItem:copper_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Kill 3 sheep",
+"prog": "killThreeSheep",
+"rep": "killThreeSheep",
+"rep_task": "Kill 3 sheep",
+"fk": "killMob:sheep:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "dedup",
+"task": "Smelt 5 raw_copper",
+"prog": "finishSmeltFiveRawCopper",
+"rep": "smeltFiveRawCopperTask",
+"rep_task": "Smelt 5 raw_copper",
+"fk": "smeltItem:copper_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Mine 5 coal ore",
+"prog": "mineFiveCoalOre",
+"rep": "mineFiveCoalOre",
+"rep_task": "Mine 5 coal ore",
+"fk": "mineBlock:coal_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Craft 1 bucket",
+"prog": "craftOneBucket",
+"rep": "craftOneBucket",
+"rep_task": "Craft 1 bucket",
+"fk": "craftItem:bucket:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "dedup",
+"task": "Smelt 14 raw_copper",
+"prog": "smeltFourteenRawCopper",
+"rep": "smeltFiveRawCopperTask",
+"rep_task": "Smelt 5 raw_copper",
+"fk": "smeltItem:copper_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Mine 5 diamond ore",
+"prog": "mineFiveDiamondOre",
+"rep": "mineFiveDiamondOre",
+"rep_task": "Mine 5 diamond ore",
+"fk": "mineBlock:diamond_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Craft 1 diamond pickaxe",
+"prog": "craftDiamondPickaxe",
+"rep": "craftDiamondPickaxe",
+"rep_task": "Craft 1 diamond pickaxe",
+"fk": "craftItem:diamond_pickaxe:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Craft 1 diamond sword",
+"prog": "craftOneDiamondSword",
+"rep": "craftOneDiamondSword",
+"rep_task": "Craft 1 diamond sword",
+"fk": "craftItem:diamond_sword:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Craft 1 iron chestplate",
+"prog": "craftIronChestplate",
+"rep": "craftIronChestplate",
+"rep_task": "Craft 1 iron chestplate",
+"fk": "craftItem:iron_chestplate:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Mine 5 deepslate redstone ore",
+"prog": "mineFiveDeepslateRedstoneOre",
+"rep": "mineFiveDeepslateRedstoneOre",
+"rep_task": "Mine 5 deepslate redstone ore",
+"fk": "mineBlock:deepslate_redstone_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Mine 5 deepslate lapis lazuli ore",
+"prog": "mineFiveDeepslateLapisOre",
+"rep": "mineFiveDeepslateLapisOre",
+"rep_task": "Mine 5 deepslate lapis lazuli ore",
+"fk": "mineBlock:deepslate_lapis_lazuli_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "dedup",
+"task": "Craft 1 diamond pickaxe",
+"prog": "completeDiamondPickaxeTask",
+"rep": "craftDiamondPickaxe",
+"rep_task": "Craft 1 diamond pickaxe",
+"fk": "craftItem:diamond_pickaxe:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Craft 1 shield",
+"prog": "craftOneShieldRetry",
+"rep": "craftOneShieldRetry",
+"rep_task": "Craft 1 shield",
+"fk": "craftItem:shield:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "dedup",
+"task": "Craft 1 diamond sword",
+"prog": "craftDiamondSwordTask",
+"rep": "craftOneDiamondSword",
+"rep_task": "Craft 1 diamond sword",
+"fk": "craftItem:diamond_sword:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Craft 1 iron shovel",
+"prog": "craftOneIronShovel",
+"rep": "craftOneIronShovel",
+"rep_task": "Craft 1 iron shovel",
+"fk": "craftItem:iron_shovel:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Craft 1 iron helmet",
+"prog": "craftOneIronHelmet",
+"rep": "craftOneIronHelmet",
+"rep_task": "Craft 1 iron helmet",
+"fk": "craftItem:iron_helmet:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Place a chest",
+"prog": "placeChestAroundMe",
+"rep": "placeChestAroundMe",
+"rep_task": "Place a chest",
+"fk": "placeItem:chest:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "skipped",
+"task": "Deposit useless items into the chest at (62, 51, -28)",
+"prog": "depositUselessItemsIntoChest",
+"rep": null,
+"rep_task": null,
+"fk": "chat:*:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "dedup",
+"task": "Craft 1 iron chestplate",
+"prog": "ensureIronChestplate",
+"rep": "craftIronChestplate",
+"rep_task": "Craft 1 iron chestplate",
+"fk": "craftItem:iron_chestplate:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "dedup",
+"task": "Craft 1 iron axe",
+"prog": "craftIronAxeTask",
+"rep": "craftOneIronAxe",
+"rep_task": "Craft 1 iron_axe",
+"fk": "craftItem:iron_axe:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "dedup",
+"task": "Craft 1 iron pickaxe",
+"prog": "craftIronPickaxeFromRawMaterial",
+"rep": "craftIronPickaxe",
+"rep_task": "Craft iron pickaxe",
+"fk": "craftItem:iron_pickaxe:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "dedup",
+"task": "Craft 1 iron sword",
+"prog": "craft_iron_sword_task",
+"rep": "craftOneIronSword",
+"rep_task": "Craft 1 iron sword",
+"fk": "craftItem:iron_sword:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "dedup",
+"task": "Mine 5 coal ore",
+"prog": "mineCoalTask",
+"rep": "mineFiveCoalOre",
+"rep_task": "Mine 5 coal ore",
+"fk": "mineBlock:coal_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Take 5 lapis_lazuli",
+"prog": "takeFiveLapisLazuli",
+"rep": "takeFiveLapisLazuli",
+"rep_task": "Take 5 lapis_lazuli",
+"fk": "getItemFromChest:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "dedup",
+"task": "Craft 1 iron shovel",
+"prog": "craftIronShovelFromRawIron",
+"rep": "craftOneIronShovel",
+"rep_task": "Craft 1 iron shovel",
+"fk": "craftItem:iron_shovel:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "dedup",
+"task": "Craft 1 iron sword",
+"prog": "completeIronSwordTask",
+"rep": "craftOneIronSword",
+"rep_task": "Craft 1 iron sword",
+"fk": "craftItem:iron_sword:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Craft 1 iron boots",
+"prog": "craftIronBootsTask",
+"rep": "craftIronBootsTask",
+"rep_task": "Craft 1 iron boots",
+"fk": "craftItem:iron_boots:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Craft 1 iron_leggings",
+"prog": "craftOneIronLeggings",
+"rep": "craftOneIronLeggings",
+"rep_task": "Craft 1 iron_leggings",
+"fk": "craftItem:iron_leggings:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "dedup",
+"task": "Craft 1 iron axe",
+"prog": "craftOneIronAxeRecheck",
+"rep": "craftOneIronAxe",
+"rep_task": "Craft 1 iron_axe",
+"fk": "craftItem:iron_axe:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Take 5 lapis_lazuli",
+"prog": "takeFiveLapisLazuli",
+"rep": "takeFiveLapisLazuli",
+"rep_task": "Take 5 lapis_lazuli",
+"fk": "reduce:*:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Mine 5 gold ore",
+"prog": "mineFiveGoldOre",
+"rep": "mineFiveGoldOre",
+"rep_task": "Mine 5 gold ore",
+"fk": "mineBlock:gold_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "dedup",
+"task": "Place a chest",
+"prog": "placeChestTask",
+"rep": "placeChestAroundMe",
+"rep_task": "Place a chest",
+"fk": "placeItem:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "skipped",
+"task": "Deposit useless items into the chest at (74, 13, -25)",
+"prog": "depositUselessItemsToChest",
+"rep": null,
+"rep_task": null,
+"fk": "countUsed:*:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "dedup",
+"task": "Craft 1 iron helmet",
+"prog": "craftIronHelmetTask",
+"rep": "craftOneIronHelmet",
+"rep_task": "Craft 1 iron helmet",
+"fk": "craftItem:iron_helmet:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Craft 1 diamond helmet",
+"prog": "craftDiamondHelmetTask",
+"rep": "craftDiamondHelmetTask",
+"rep_task": "Craft 1 diamond helmet",
+"fk": "craftItem:diamond_helmet:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "dedup",
+"task": "Mine 5 diamond ore",
+"prog": "mineFiveDiamonds",
+"rep": "mineFiveDiamondOre",
+"rep_task": "Mine 5 diamond ore",
+"fk": "mineBlock:diamond_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "dedup",
+"task": "Place a chest",
+"prog": "placeChestTask",
+"rep": "placeChestAroundMe",
+"rep_task": "Place a chest",
+"fk": "placeItem:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Equip diamond_helmet",
+"prog": "equipDiamondHelmet",
+"rep": "equipDiamondHelmet",
+"rep_task": "Equip diamond_helmet",
+"fk": "chat:diamond_helmet_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Open unknown chest and check items inside",
+"prog": "openAndCheckUnknownChest",
+"rep": "openAndCheckUnknownChest",
+"rep_task": "Open unknown chest and check items inside",
+"fk": "goto:*:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "dedup",
+"task": "Craft 1 iron pickaxe",
+"prog": "craftOneIronPickaxeIfNeeded",
+"rep": "craftIronPickaxe",
+"rep_task": "Craft iron pickaxe",
+"fk": "craftItem:iron_pickaxe:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Equip iron_helmet",
+"prog": "equipIronHelmetTask",
+"rep": "equipIronHelmetTask",
+"rep_task": "Equip iron_helmet",
+"fk": "chat:iron_helmet_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "dedup",
+"task": "Craft 1 iron chestplate",
+"prog": "craftOneIronChestplate",
+"rep": "craftIronChestplate",
+"rep_task": "Craft 1 iron chestplate",
+"fk": "craftItem:iron_chestplate:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Equip diamond_helmet",
+"prog": "equipDiamondHelmetTask",
+"rep": "equipDiamondHelmetTask",
+"rep_task": "Equip diamond_helmet",
+"fk": "equip:diamond_helmet:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Open unknown chest and check items inside",
+"prog": "openUnknownChestAndCheck",
+"rep": "openUnknownChestAndCheck",
+"rep_task": "Open unknown chest and check items inside",
+"fk": "chat:finished_checking_the_chest.:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "skipped",
+"task": "Deposit useless items into the chest at (71, 1, -25)",
+"prog": "depositUselessItemsToChest",
+"rep": null,
+"rep_task": null,
+"fk": "chat:deposit_task_complete.:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "added",
+"task": "Open and check unknown chest",
+"prog": "checkUnknownChestTask",
+"rep": "checkUnknownChestTask",
+"rep_task": "Open and check unknown chest",
+"fk": "checkItemInsideChest:*:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_18-47-19",
+"kind": "dedup",
+"task": "Open and check unknown chest",
+"prog": "checkUnknownChest",
+"rep": "checkUnknownChestTask",
+"rep_task": "Open and check unknown chest",
+"fk": "checkItemInsideChest:*:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Mine 1 wood log",
+"prog": "mineOneWoodLogAtTree",
+"rep": "mineOneWoodLogAtTree",
+"rep_task": "Mine 1 wood log",
+"fk": "mineBlock:oak_log:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Mine 8 cobblestone",
+"prog": "mine8Cobblestone",
+"rep": "mine8Cobblestone",
+"rep_task": "Mine 8 cobblestone",
+"fk": "mineBlock:cobblestone:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Mine 5 coal_ore",
+"prog": "mine5CoalOre",
+"rep": "mine5CoalOre",
+"rep_task": "Mine 5 coal_ore",
+"fk": "mineBlock:coal_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Mine 5 iron_ore",
+"prog": "mineFiveIronOre",
+"rep": "mineFiveIronOre",
+"rep_task": "Mine 5 iron_ore",
+"fk": "mineBlock:iron_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Craft 1 iron pickaxe",
+"prog": "craftOneIronPickaxe",
+"rep": "craftOneIronPickaxe",
+"rep_task": "Craft 1 iron pickaxe",
+"fk": "craftItem:iron_pickaxe:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "dedup",
+"task": "Craft 1 iron pickaxe",
+"prog": "craftIronPickaxeTask",
+"rep": "craftOneIronPickaxe",
+"rep_task": "Craft 1 iron pickaxe",
+"fk": "craftItem:iron_pickaxe:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "dedup",
+"task": "Mine 5 coal_ore",
+"prog": "mineFiveCoalOreTask",
+"rep": "mine5CoalOre",
+"rep_task": "Mine 5 coal_ore",
+"fk": "mineBlock:coal_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Craft 1 iron shovel",
+"prog": "craftIronShovel",
+"rep": "craftIronShovel",
+"rep_task": "Craft 1 iron shovel",
+"fk": "craftItem:iron_shovel:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Craft 1 iron sword",
+"prog": "craftOneIronSword",
+"rep": "craftOneIronSword",
+"rep_task": "Craft 1 iron sword",
+"fk": "craftItem:iron_sword:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Smelt 5 raw_iron",
+"prog": "smeltFiveRawIron",
+"rep": "smeltFiveRawIron",
+"rep_task": "Smelt 5 raw_iron",
+"fk": "smeltItem:iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Craft 1 iron axe",
+"prog": "craftOneIronAxe",
+"rep": "craftOneIronAxe",
+"rep_task": "Craft 1 iron axe",
+"fk": "craftItem:iron_axe:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Craft 1 iron helmet",
+"prog": "craftIronHelmet",
+"rep": "craftIronHelmet",
+"rep_task": "Craft 1 iron helmet",
+"fk": "craftItem:iron_helmet:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "dedup",
+"task": "Mine 5 iron_ore",
+"prog": "mineFiveIronTask",
+"rep": "mineFiveIronOre",
+"rep_task": "Mine 5 iron_ore",
+"fk": "mineBlock:iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Mine 3 diamond_ore",
+"prog": "mineThreeDiamonds",
+"rep": "mineThreeDiamonds",
+"rep_task": "Mine 3 diamond_ore",
+"fk": "mineBlock:diamond_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "dedup",
+"task": "Mine 2 diamond_ore",
+"prog": "mineTwoDiamondOre",
+"rep": "mineThreeDiamonds",
+"rep_task": "Mine 3 diamond_ore",
+"fk": "mineBlock:diamond_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Craft 1 diamond pickaxe",
+"prog": "craftDiamondPickaxe",
+"rep": "craftDiamondPickaxe",
+"rep_task": "Craft 1 diamond pickaxe",
+"fk": "craftItem:diamond_pickaxe:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "dedup",
+"task": "Smelt 5 raw_iron",
+"prog": "smeltFiveRawIronTask",
+"rep": "smeltFiveRawIron",
+"rep_task": "Smelt 5 raw_iron",
+"fk": "smeltItem:iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Craft 1 iron chestplate",
+"prog": "craftIronChestplate",
+"rep": "craftIronChestplate",
+"rep_task": "Craft 1 iron chestplate",
+"fk": "craftItem:iron_chestplate:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Mine 5 lapis lazuli ore",
+"prog": "mineFiveLapisLazuli",
+"rep": "mineFiveLapisLazuli",
+"rep_task": "Mine 5 lapis lazuli ore",
+"fk": "mineBlock:lapis_lazuli_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Mine 5 deepslate redstone ore",
+"prog": "mineFiveRedstone",
+"rep": "mineFiveRedstone",
+"rep_task": "Mine 5 deepslate redstone ore",
+"fk": "mineBlock:deepslate_redstone_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Mine 5 deepslate gold ore",
+"prog": "mineFiveDeepslateGoldOre",
+"rep": "mineFiveDeepslateGoldOre",
+"rep_task": "Mine 5 deepslate gold ore",
+"fk": "mineBlock:deepslate_gold_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Mine 5 deepslate iron ore",
+"prog": "mineFiveDeepslateIronOre",
+"rep": "mineFiveDeepslateIronOre",
+"rep_task": "Mine 5 deepslate iron ore",
+"fk": "mineBlock:deepslate_iron_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Mine 5 deepslate copper ore",
+"prog": "mineFiveDeepslateCopperOre",
+"rep": "mineFiveDeepslateCopperOre",
+"rep_task": "Mine 5 deepslate copper ore",
+"fk": "mineBlock:deepslate_copper_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Equip iron_chestplate",
+"prog": "equipIronChestplate",
+"rep": "equipIronChestplate",
+"rep_task": "Equip iron_chestplate",
+"fk": "equip:iron_chestplate:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "dedup",
+"task": "Mine 3 diamond_ore",
+"prog": "mineThreeDiamondsTask",
+"rep": "mineThreeDiamonds",
+"rep_task": "Mine 3 diamond_ore",
+"fk": "mineBlock:diamond_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "dedup",
+"task": "Mine 3 diamond_ore",
+"prog": "mineThreeDiamondsTask",
+"rep": "mineThreeDiamonds",
+"rep_task": "Mine 3 diamond_ore",
+"fk": "mineBlock:diamond_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Equip iron_helmet",
+"prog": "equipIronHelmetTask",
+"rep": "equipIronHelmetTask",
+"rep_task": "Equip iron_helmet",
+"fk": "equip:iron_helmet:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "dedup",
+"task": "Mine 5 deepslate redstone ore",
+"prog": "mineDeepslateRedstoneTask",
+"rep": "mineFiveRedstone",
+"rep_task": "Mine 5 deepslate redstone ore",
+"fk": "mineBlock:deepslate_redstone_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Craft 1 diamond chestplate",
+"prog": "craftDiamondChestplateTask",
+"rep": "craftDiamondChestplateTask",
+"rep_task": "Craft 1 diamond chestplate",
+"fk": "craftItem:diamond_chestplate:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "dedup",
+"task": "Smelt 7 raw_iron",
+"prog": "smeltSevenRawIron",
+"rep": "smeltFiveRawIron",
+"rep_task": "Smelt 5 raw_iron",
+"fk": "smeltItem:iron_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Craft 1 diamond boots",
+"prog": "craftDiamondBootsTask",
+"rep": "craftDiamondBootsTask",
+"rep_task": "Craft 1 diamond boots",
+"fk": "craftItem:diamond_boots:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Craft 1 diamond axe",
+"prog": "craftDiamondAxeTask",
+"rep": "craftDiamondAxeTask",
+"rep_task": "Craft 1 diamond axe",
+"fk": "craftItem:diamond_axe:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Craft 1 diamond helmet",
+"prog": "craftDiamondHelmetTask",
+"rep": "craftDiamondHelmetTask",
+"rep_task": "Craft 1 diamond helmet",
+"fk": "craftItem:diamond_helmet:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Place a chest",
+"prog": "placeChestAroundBot",
+"rep": "placeChestAroundBot",
+"rep_task": "Place a chest",
+"fk": "placeItem:chest:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "skipped",
+"task": "Deposit useless items into the chest at (104, -59, -221)",
+"prog": "depositUselessItemsToChest",
+"rep": null,
+"rep_task": null,
+"fk": "depositItemIntoChest:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Open chest",
+"prog": "openNearbyChestTask",
+"rep": "openNearbyChestTask",
+"rep_task": "Open chest",
+"fk": "checkItemInsideChest:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Equip diamond_chestplate",
+"prog": "equipDiamondChestplateTask",
+"rep": "equipDiamondChestplateTask",
+"rep_task": "Equip diamond_chestplate",
+"fk": "equip:diamond_chestplate:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "dedup",
+"task": "Craft 1 diamond pickaxe",
+"prog": "craftDiamondPickaxeTask",
+"rep": "craftDiamondPickaxe",
+"rep_task": "Craft 1 diamond pickaxe",
+"fk": "craftItem:diamond_pickaxe:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "dedup",
+"task": "Equip iron_chestplate",
+"prog": "equipIronChestplateTask",
+"rep": "equipIronChestplate",
+"rep_task": "Equip iron_chestplate",
+"fk": "equip:iron_chestplate:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Craft 1 diamond leggings",
+"prog": "craftDiamondLeggingsTask",
+"rep": "craftDiamondLeggingsTask",
+"rep_task": "Craft 1 diamond leggings",
+"fk": "craftItem:diamond_leggings:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "dedup",
+"task": "Craft 1 iron pickaxe",
+"prog": "craftIronPickaxeTask",
+"rep": "craftOneIronPickaxe",
+"rep_task": "Craft 1 iron pickaxe",
+"fk": "craftItem:iron_pickaxe:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Take 1 iron_sword",
+"prog": "takeOneIronSword",
+"rep": "takeOneIronSword",
+"rep_task": "Take 1 iron_sword",
+"fk": "some:*:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "dedup",
+"task": "Craft 1 diamond leggings",
+"prog": "completeDiamondLeggingsTask",
+"rep": "craftDiamondLeggingsTask",
+"rep_task": "Craft 1 diamond leggings",
+"fk": "craftItem:diamond_leggings:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "dedup",
+"task": "Open chest",
+"prog": "openChestTask",
+"rep": "openNearbyChestTask",
+"rep_task": "Open chest",
+"fk": "checkItemInsideChest:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Open chest",
+"prog": "openChestTask",
+"rep": "openChestTask",
+"rep_task": "Open chest",
+"fk": "checkItemInsideChest:*:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Equip diamond leggings",
+"prog": "equipDiamondLeggingsTask",
+"rep": "equipDiamondLeggingsTask",
+"rep_task": "Equip diamond leggings",
+"fk": "chat:equipped_diamond_leggings.:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "added",
+"task": "Craft 1 iron leggings",
+"prog": "craftIronLeggingsTask",
+"rep": "craftIronLeggingsTask",
+"rep_task": "Craft 1 iron leggings",
+"fk": "craftItem:iron_leggings:*",
+"pm": "rule"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "dedup",
+"task": "Craft 1 diamond leggings",
+"prog": "craftDiamondLeggingsMain",
+"rep": "craftDiamondLeggingsTask",
+"rep_task": "Craft 1 diamond leggings",
+"fk": "craftItem:diamond_leggings:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "dedup",
+"task": "Place a chest",
+"prog": "placeChestTask",
+"rep": "placeChestAroundBot",
+"rep_task": "Place a chest",
+"fk": "placeItem:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-2026-05-14_02-05-05",
+"kind": "skipped",
+"task": "Deposit useless items into the chest at (21, -7, -18)",
+"prog": "depositUselessItemsToChest",
+"rep": null,
+"rep_task": null,
+"fk": "depositItemIntoChest:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Mine 1 wood log",
+"prog": "mineOneWoodLog",
+"rep": "mineOneWoodLog",
+"rep_task": "Mine 1 wood log",
+"fk": "mineBlock:oak_log:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Craft 4 oak_planks",
+"prog": "craftOakPlanks",
+"rep": "craftOakPlanks",
+"rep_task": "Craft 4 oak_planks",
+"fk": "craftItem:oak_planks:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Mine 1 oak_log",
+"prog": "mineOneOakLogTask",
+"rep": "mineOneWoodLog",
+"rep_task": "Mine 1 wood log",
+"fk": "mineBlock:oak_log:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Craft wooden pickaxe",
+"prog": "craftWoodenPickaxe",
+"rep": "craftWoodenPickaxe",
+"rep_task": "Craft wooden pickaxe",
+"fk": "craftItem:wooden_pickaxe:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Mine 8 cobblestone",
+"prog": "mineEightCobblestone",
+"rep": "mineEightCobblestone",
+"rep_task": "Mine 8 cobblestone",
+"fk": "mineBlock:cobblestone:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Craft stone pickaxe",
+"prog": "craftStonePickaxe",
+"rep": "craftStonePickaxe",
+"rep_task": "Craft stone pickaxe",
+"fk": "craftItem:stone_pickaxe:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Mine 5 coal_ore",
+"prog": "mineFiveCoalOreSafely",
+"rep": "mineFiveCoalOreSafely",
+"rep_task": "Mine 5 coal_ore",
+"fk": "mineBlock:coal_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Mine 5 iron ore",
+"prog": "satisfyFiveIronOreTask",
+"rep": "satisfyFiveIronOreTask",
+"rep_task": "Mine 5 iron ore",
+"fk": "mineBlock:iron_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Smelt 9 raw_iron",
+"prog": "smeltNineRawIron",
+"rep": "smeltNineRawIron",
+"rep_task": "Smelt 9 raw_iron",
+"fk": "smeltItem:iron_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Craft iron pickaxe",
+"prog": "craftIronPickaxe",
+"rep": "craftIronPickaxe",
+"rep_task": "Craft iron pickaxe",
+"fk": "craftItem:iron_pickaxe:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Mine 5 lapis ore",
+"prog": "mineFiveLapisOre",
+"rep": "mineFiveLapisOre",
+"rep_task": "Mine 5 lapis ore",
+"fk": "mineBlock:lapis_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Mine 5 diamond ore",
+"prog": "completeMineFiveDiamondOreTask",
+"rep": "completeMineFiveDiamondOreTask",
+"rep_task": "Mine 5 diamond ore",
+"fk": "mineBlock:diamond_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Craft diamond pickaxe",
+"prog": "craftDiamondPickaxe",
+"rep": "craftDiamondPickaxe",
+"rep_task": "Craft diamond pickaxe",
+"fk": "craftItem:diamond_pickaxe:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Craft diamond sword",
+"prog": "craftDiamondSwordTask",
+"rep": "craftDiamondSwordTask",
+"rep_task": "Craft diamond sword",
+"fk": "craftItem:diamond_sword:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Craft iron sword",
+"prog": "craftIronSwordTask",
+"rep": "craftIronSwordTask",
+"rep_task": "Craft iron sword",
+"fk": "craftItem:iron_sword:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Craft iron helmet",
+"prog": "craftIronHelmetTask",
+"rep": "craftIronHelmetTask",
+"rep_task": "Craft iron helmet",
+"fk": "craftItem:iron_helmet:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Equip iron helmet",
+"prog": "equipIronHelmet",
+"rep": "equipIronHelmet",
+"rep_task": "Equip iron helmet",
+"fk": "chat:iron_helmet_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Craft iron chestplate",
+"prog": "craftIronChestplateTask",
+"rep": "craftIronChestplateTask",
+"rep_task": "Craft iron chestplate",
+"fk": "craftItem:iron_chestplate:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Craft diamond helmet",
+"prog": "craftDiamondHelmetTask",
+"rep": "craftDiamondHelmetTask",
+"rep_task": "Craft diamond helmet",
+"fk": "craftItem:diamond_helmet:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Craft iron sword",
+"prog": "craftIronSwordMain",
+"rep": "craftIronSwordMain",
+"rep_task": "Craft iron sword",
+"fk": "craftIronSwordTask:*:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Craft iron chestplate",
+"prog": "craftIronChestplateIfNeeded",
+"rep": "craftIronChestplateIfNeeded",
+"rep_task": "Craft iron chestplate",
+"fk": "craftIronChestplateTask:*:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Craft iron leggings",
+"prog": "craftIronLeggingsTask",
+"rep": "craftIronLeggingsTask",
+"rep_task": "Craft iron leggings",
+"fk": "craftItem:iron_leggings:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Craft iron sword",
+"prog": "craftIronSwordTaskRunner",
+"rep": "craftIronSwordTaskRunner",
+"rep_task": "Craft iron sword",
+"fk": "craftIronSwordMain:*:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Mine 5 diamond ore",
+"prog": "mineFiveDiamondOreTask",
+"rep": "completeMineFiveDiamondOreTask",
+"rep_task": "Mine 5 diamond ore",
+"fk": "mineBlock:diamond_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Mine 5 diamond ore",
+"prog": "mineFiveDiamondOreTask",
+"rep": "completeMineFiveDiamondOreTask",
+"rep_task": "Mine 5 diamond ore",
+"fk": "mineBlock:diamond_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Craft iron chestplate",
+"prog": "ensureIronChestplate",
+"rep": "ensureIronChestplate",
+"rep_task": "Craft iron chestplate",
+"fk": "craftIronChestplateIfNeeded:*:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Craft diamond leggings",
+"prog": "craftDiamondLeggingsTask",
+"rep": "craftDiamondLeggingsTask",
+"rep_task": "Craft diamond leggings",
+"fk": "craftItem:diamond_leggings:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Mine 5 deepslate diamond ore",
+"prog": "mineFiveDeepslateDiamondOre",
+"rep": "mineFiveDeepslateDiamondOre",
+"rep_task": "Mine 5 deepslate diamond ore",
+"fk": "mineBlock:deepslate_diamond_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Craft diamond chestplate",
+"prog": "craftDiamondChestplateTask",
+"rep": "craftDiamondChestplateTask",
+"rep_task": "Craft diamond chestplate",
+"fk": "craftItem:diamond_chestplate:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Equip iron chestplate",
+"prog": "equipIronChestplateTask",
+"rep": "equipIronChestplateTask",
+"rep_task": "Equip iron chestplate",
+"fk": "equip:iron_chestplate:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Equip diamond_chestplate",
+"prog": "equipDiamondChestplateTask",
+"rep": "equipDiamondChestplateTask",
+"rep_task": "Equip diamond_chestplate",
+"fk": "chat:diamond_chestplate_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Equip diamond_helmet",
+"prog": "equipDiamondHelmetTask",
+"rep": "equipDiamondHelmetTask",
+"rep_task": "Equip diamond_helmet",
+"fk": "equip:diamond_helmet:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Craft diamond leggings",
+"prog": "makeDiamondLeggings",
+"rep": "makeDiamondLeggings",
+"rep_task": "Craft diamond leggings",
+"fk": "craftDiamondLeggingsTask:*:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Mine 5 deepslate_lapis_ore",
+"prog": "mineFiveDeepslateLapisOreTask",
+"rep": "mineFiveDeepslateLapisOreTask",
+"rep_task": "Mine 5 deepslate_lapis_ore",
+"fk": "mineBlock:deepslate_lapis_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Mine 5 deepslate redstone ore",
+"prog": "mineFiveDeepslateRedstoneOre",
+"rep": "mineFiveDeepslateRedstoneOre",
+"rep_task": "Mine 5 deepslate redstone ore",
+"fk": "mineBlock:deepslate_redstone_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Craft iron leggings",
+"prog": "craftIronLeggingsIfNeeded",
+"rep": "craftIronLeggingsTask",
+"rep_task": "Craft iron leggings",
+"fk": "craftItem:iron_leggings:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Craft 1 diamond_boots",
+"prog": "craftDiamondBootsTask",
+"rep": "craftDiamondBootsTask",
+"rep_task": "Craft 1 diamond_boots",
+"fk": "craftItem:diamond_boots:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Equip diamond_boots",
+"prog": "equipDiamondBootsTask",
+"rep": "equipDiamondBootsTask",
+"rep_task": "Equip diamond_boots",
+"fk": "equip:diamond_boots:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Craft diamond chestplate",
+"prog": "craftDiamondChestplateMain",
+"rep": "craftDiamondChestplateMain",
+"rep_task": "Craft diamond chestplate",
+"fk": "chat:*:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Mine 5 deepslate diamond ore",
+"prog": "mineDeepslateDiamondOreTask",
+"rep": "mineFiveDeepslateDiamondOre",
+"rep_task": "Mine 5 deepslate diamond ore",
+"fk": "mineBlock:deepslate_diamond_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Place a chest",
+"prog": "placeChestTask",
+"rep": "placeChestTask",
+"rep_task": "Place a chest",
+"fk": "placeItem:chest:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Open the chest and check its items",
+"prog": "openAndCheckNearbyChest",
+"rep": "craftDiamondChestplateMain",
+"rep_task": "Craft diamond chestplate",
+"fk": "chat:*:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "skipped",
+"task": "Deposit useless items into the chest at (67, -29, -16)",
+"prog": "reduceInventoryToTwentySlots",
+"rep": null,
+"rep_task": null,
+"fk": "depositItemIntoChest:(67,__29,__16):*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Equip iron_helmet",
+"prog": "equipIronHelmetFromChestTask",
+"rep": "equipIronHelmetFromChestTask",
+"rep_task": "Equip iron_helmet",
+"fk": "equip:iron_helmet:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Open the chest and check its items",
+"prog": "openAndCheckChestTask",
+"rep": "craftDiamondChestplateMain",
+"rep_task": "Craft diamond chestplate",
+"fk": "chat:*:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Equip iron_leggings",
+"prog": "equipIronLeggingsTask",
+"rep": "equipIronLeggingsTask",
+"rep_task": "Equip iron_leggings",
+"fk": "chat:iron_leggings_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Open the chest and check its items",
+"prog": "openAndCheckNearbyChest",
+"rep": "openAndCheckNearbyChest",
+"rep_task": "Open the chest and check its items",
+"fk": "checkItemInsideChest:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Equip iron_chestplate",
+"prog": "equipIronChestplateFromChest",
+"rep": "equipIronChestplateTask",
+"rep_task": "Equip iron chestplate",
+"fk": "equip:iron_chestplate:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Equip diamond_leggings",
+"prog": "equipDiamondLeggings",
+"rep": "equipDiamondLeggings",
+"rep_task": "Equip diamond_leggings",
+"fk": "equip:diamond_leggings:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Mine 5 deepslate_gold_ore",
+"prog": "mineFiveDeepslateGoldOre",
+"rep": "mineFiveDeepslateGoldOre",
+"rep_task": "Mine 5 deepslate_gold_ore",
+"fk": "mineBlock:deepslate_gold_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Craft diamond leggings",
+"prog": "craftDiamondLeggingsIfNeeded",
+"rep": "craftDiamondLeggingsTask",
+"rep_task": "Craft diamond leggings",
+"fk": "craftItem:diamond_leggings:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Mine 5 deepslate diamond ore",
+"prog": "mineOneMoreDeepslateDiamondIfNeeded",
+"rep": "mineFiveDeepslateDiamondOre",
+"rep_task": "Mine 5 deepslate diamond ore",
+"fk": "mineBlock:deepslate_diamond_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Equip diamond_helmet",
+"prog": "equipDiamondHelmetTask",
+"rep": "equipDiamondHelmetTask",
+"rep_task": "Equip diamond_helmet",
+"fk": "equip:diamond_helmet:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Equip diamond_chestplate",
+"prog": "equipDiamondChestplateTask",
+"rep": "equipDiamondChestplateTask",
+"rep_task": "Equip diamond_chestplate",
+"fk": "chat:diamond_chestplate_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Smelt 5 raw_gold",
+"prog": "smeltFiveRawGoldTask",
+"rep": "smeltFiveRawGoldTask",
+"rep_task": "Smelt 5 raw_gold",
+"fk": "smeltItem:gold_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Mine 5 deepslate_redstone_ore",
+"prog": "mineDeepslateRedstoneTask",
+"rep": "mineFiveDeepslateRedstoneOre",
+"rep_task": "Mine 5 deepslate redstone ore",
+"fk": "mineBlock:deepslate_redstone_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Craft diamond pickaxe",
+"prog": "craftDiamondPickaxeTask",
+"rep": "craftDiamondPickaxeTask",
+"rep_task": "Craft diamond pickaxe",
+"fk": "craftDiamondPickaxe:*:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Open the unknown chest and check items inside",
+"prog": "openUnknownChestAndCheckItems",
+"rep": "openUnknownChestAndCheckItems",
+"rep_task": "Open the unknown chest and check items inside",
+"fk": "chat:chest_checked.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Smelt 3 raw_gold",
+"prog": "smeltThreeRawGoldTask",
+"rep": "smeltFiveRawGoldTask",
+"rep_task": "Smelt 5 raw_gold",
+"fk": "smeltItem:gold_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Smelt 3 raw_gold",
+"prog": "smeltThreeRawGoldTask",
+"rep": "smeltFiveRawGoldTask",
+"rep_task": "Smelt 5 raw_gold",
+"fk": "smeltItem:gold_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Mine 5 deepslate gold ore",
+"prog": "mineDeepslateGoldOreTask",
+"rep": "mineFiveDeepslateGoldOre",
+"rep_task": "Mine 5 deepslate_gold_ore",
+"fk": "mineBlock:deepslate_gold_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Equip iron_leggings",
+"prog": "equipIronLeggings",
+"rep": "equipIronLeggings",
+"rep_task": "Equip iron_leggings",
+"fk": "equip:iron_leggings:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Craft 1 diamond_sword",
+"prog": "craftRequestedDiamondSword",
+"rep": "craftDiamondSwordTask",
+"rep_task": "Craft diamond sword",
+"fk": "craftItem:diamond_sword:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Craft iron shovel",
+"prog": "craftIronShovelTask",
+"rep": "craftIronShovelTask",
+"rep_task": "Craft iron shovel",
+"fk": "craftItem:iron_shovel:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Craft iron leggings",
+"prog": "craftIronLeggingsMain",
+"rep": "smeltNineRawIron",
+"rep_task": "Smelt 9 raw_iron",
+"fk": "smeltItem:iron_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Craft iron boots",
+"prog": "craftIronBootsTask",
+"rep": "craftIronBootsTask",
+"rep_task": "Craft iron boots",
+"fk": "craftItem:iron_boots:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Craft iron pickaxe",
+"prog": "craftIronPickaxeTask",
+"rep": "craftIronPickaxe",
+"rep_task": "Craft iron pickaxe",
+"fk": "craftItem:iron_pickaxe:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Craft diamond_leggings",
+"prog": "craftDiamondLeggingsMain",
+"rep": "makeDiamondLeggings",
+"rep_task": "Craft diamond leggings",
+"fk": "craftDiamondLeggingsTask:*:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Craft 1 golden_pickaxe",
+"prog": "craftGoldenPickaxeTask",
+"rep": "craftGoldenPickaxeTask",
+"rep_task": "Craft 1 golden_pickaxe",
+"fk": "craftItem:golden_pickaxe:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Craft 1 redstone torch",
+"prog": "craftRedstoneTorchTask",
+"rep": "craftRedstoneTorchTask",
+"rep_task": "Craft 1 redstone torch",
+"fk": "craftItem:redstone_torch:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Craft 1 diamond_axe",
+"prog": "craftDiamondAxeTask",
+"rep": "craftDiamondAxeTask",
+"rep_task": "Craft 1 diamond_axe",
+"fk": "craftItem:diamond_axe:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Equip diamond_leggings",
+"prog": "equipDiamondLeggingsTask",
+"rep": "equipDiamondLeggings",
+"rep_task": "Equip diamond_leggings",
+"fk": "equip:diamond_leggings:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Craft 1 diamond helmet",
+"prog": "craftDiamondHelmetMain",
+"rep": "craftDiamondHelmetTask",
+"rep_task": "Craft diamond helmet",
+"fk": "craftItem:diamond_helmet:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Place a chest",
+"prog": "placeChestNearby",
+"rep": "placeChestTask",
+"rep_task": "Place a chest",
+"fk": "placeItem:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "skipped",
+"task": "Deposit useless items into the chest at (147, -60, 76)",
+"prog": "depositUselessItemsToTargetChest",
+"rep": null,
+"rep_task": null,
+"fk": "depositItemIntoChest:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Open the nearby chest and take the iron_chestplate",
+"prog": "takeNearbyIronChestplate",
+"rep": "takeNearbyIronChestplate",
+"rep_task": "Open the nearby chest and take the iron_chestplate",
+"fk": "getItemFromChest:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Equip iron_chestplate",
+"prog": "equipIronChestplateTask",
+"rep": "equipIronChestplateTask",
+"rep_task": "Equip iron chestplate",
+"fk": "chat:iron_chestplate_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Mine 5 deepslate redstone ore",
+"prog": "mineDeepslateRedstone",
+"rep": "mineFiveDeepslateRedstoneOre",
+"rep_task": "Mine 5 deepslate redstone ore",
+"fk": "mineBlock:deepslate_redstone_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Mine 5 deepslate redstone ore",
+"prog": "mineTask_deepslateRedstone",
+"rep": "mineFiveDeepslateRedstoneOre",
+"rep_task": "Mine 5 deepslate redstone ore",
+"fk": "mineBlock:deepslate_redstone_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Equip iron_helmet",
+"prog": "equipIronHelmetFromNearbyChest",
+"rep": "equipIronHelmetFromChestTask",
+"rep_task": "Equip iron_helmet",
+"fk": "equip:iron_helmet:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Mine 5 deepslate_diamond_ore",
+"prog": "mineFiveDeepslateDiamondOreTaskRunner",
+"rep": "mineFiveDeepslateDiamondOre",
+"rep_task": "Mine 5 deepslate diamond ore",
+"fk": "mineBlock:deepslate_diamond_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Smelt 3 raw_iron",
+"prog": "smeltThreeRawIronTask",
+"rep": "smeltNineRawIron",
+"rep_task": "Smelt 9 raw_iron",
+"fk": "smeltItem:iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Equip diamond_chestplate",
+"prog": "equipDiamondChestplateTask",
+"rep": "equipDiamondChestplateTask",
+"rep_task": "Equip diamond_chestplate",
+"fk": "equip:diamond_chestplate:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Mine 5 deepslate_diamond_ore",
+"prog": "mineFiveDeepslateDiamondOreTaskRunner",
+"rep": "mineFiveDeepslateDiamondOre",
+"rep_task": "Mine 5 deepslate diamond ore",
+"fk": "mineBlock:deepslate_diamond_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Equip iron_leggings",
+"prog": "equipIronLeggingsTask",
+"rep": "equipIronLeggings",
+"rep_task": "Equip iron_leggings",
+"fk": "equip:iron_leggings:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Equip iron_chestplate",
+"prog": "equipIronChestplate",
+"rep": "equipIronChestplateTask",
+"rep_task": "Equip iron chestplate",
+"fk": "chat:iron_chestplate_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Craft 1 diamond_leggings",
+"prog": "craftDiamondLeggings",
+"rep": "craftDiamondLeggingsTask",
+"rep_task": "Craft diamond leggings",
+"fk": "craftItem:diamond_leggings:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Craft 1 diamond boots",
+"prog": "craftOneDiamondBoots",
+"rep": "craftDiamondBootsTask",
+"rep_task": "Craft 1 diamond_boots",
+"fk": "craftItem:diamond_boots:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Open the nearby chest and take the diamond_pickaxe",
+"prog": "ensureDiamondPickaxe",
+"rep": "openAndCheckNearbyChest",
+"rep_task": "Open the chest and check its items",
+"fk": "checkItemInsideChest:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "added",
+"task": "Craft iron bucket",
+"prog": "craftIronBucketTask",
+"rep": "craftIronBucketTask",
+"rep_task": "Craft iron bucket",
+"fk": "craftItem:bucket:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Mine 5 deepslate_diamond_ore",
+"prog": "mineFiveDeepslateDiamondOreTask",
+"rep": "mineFiveDeepslateDiamondOre",
+"rep_task": "Mine 5 deepslate diamond ore",
+"fk": "mineBlock:deepslate_diamond_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed6",
+"kind": "dedup",
+"task": "Equip diamond_helmet",
+"prog": "equipDiamondHelmet",
+"rep": "equipDiamondHelmetTask",
+"rep_task": "Equip diamond_helmet",
+"fk": "equip:diamond_helmet:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Mine 1 wood log",
+"prog": "mineOneWoodLog",
+"rep": "mineOneWoodLog",
+"rep_task": "Mine 1 wood log",
+"fk": "mineBlock:oak_log:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Craft 12 oak_planks",
+"prog": "craftTwelveOakPlanks",
+"rep": "craftTwelveOakPlanks",
+"rep_task": "Craft 12 oak_planks",
+"fk": "craftItem:oak_planks:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Mine 1 wood log",
+"prog": "mineOneWoodLogTask",
+"rep": "mineOneWoodLog",
+"rep_task": "Mine 1 wood log",
+"fk": "mineBlock:oak_log:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Craft 1 wooden pickaxe",
+"prog": "craftWoodenPickaxe",
+"rep": "craftWoodenPickaxe",
+"rep_task": "Craft 1 wooden pickaxe",
+"fk": "craftItem:wooden_pickaxe:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Mine 5 copper ore",
+"prog": "mineFiveCopperOre",
+"rep": "mineFiveCopperOre",
+"rep_task": "Mine 5 copper ore",
+"fk": "mineBlock:copper_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Mine 3 lapis_ore",
+"prog": "mineThreeLapisOre",
+"rep": "mineThreeLapisOre",
+"rep_task": "Mine 3 lapis_ore",
+"fk": "mineBlock:lapis_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Craft 1 iron_sword",
+"prog": "craftIronSword",
+"rep": "craftIronSword",
+"rep_task": "Craft 1 iron_sword",
+"fk": "craftItem:iron_sword:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Kill 3 chicken",
+"prog": "killThreeChickens",
+"rep": "killThreeChickens",
+"rep_task": "Kill 3 chicken",
+"fk": "killMob:chicken:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Craft 1 iron_axe",
+"prog": "craftOneIronAxeFixed",
+"rep": "craftOneIronAxeFixed",
+"rep_task": "Craft 1 iron_axe",
+"fk": "craftItem:iron_axe:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Mine 3 diamond ore",
+"prog": "mineThreeDiamondOreProperly",
+"rep": "mineThreeDiamondOreProperly",
+"rep_task": "Mine 3 diamond ore",
+"fk": "mineBlock:diamond_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Mine 5 diamond ore",
+"prog": "mineFiveDiamondOreTask",
+"rep": "mineThreeDiamondOreProperly",
+"rep_task": "Mine 3 diamond ore",
+"fk": "mineBlock:diamond_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Craft 1 diamond pickaxe",
+"prog": "craftDiamondPickaxe",
+"rep": "craftDiamondPickaxe",
+"rep_task": "Craft 1 diamond pickaxe",
+"fk": "craftItem:diamond_pickaxe:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Smelt 27 raw_copper",
+"prog": "smeltTwentySevenRawCopper",
+"rep": "smeltTwentySevenRawCopper",
+"rep_task": "Smelt 27 raw_copper",
+"fk": "smeltItem:copper_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Craft 1 diamond chestplate",
+"prog": "craftDiamondChestplateTask",
+"rep": "craftDiamondChestplateTask",
+"rep_task": "Craft 1 diamond chestplate",
+"fk": "craftItem:diamond_chestplate:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Craft 1 diamond helmet",
+"prog": "craftDiamondHelmetTaskFixed",
+"rep": "craftDiamondHelmetTaskFixed",
+"rep_task": "Craft 1 diamond helmet",
+"fk": "craftItem:diamond_helmet:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Craft 1 diamond sword",
+"prog": "craftDiamondSwordTask",
+"rep": "craftDiamondSwordTask",
+"rep_task": "Craft 1 diamond sword",
+"fk": "craftItem:diamond_sword:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Place a chest",
+"prog": "placeChestAroundBot",
+"rep": "placeChestAroundBot",
+"rep_task": "Place a chest",
+"fk": "placeItem:chest:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Open chest and check items inside",
+"prog": "openAndCheckChestTask",
+"rep": "openAndCheckChestTask",
+"rep_task": "Open chest and check items inside",
+"fk": "chat:*:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "skipped",
+"task": "Deposit useless items into the chest at (2, -48, -3)",
+"prog": "depositUselessItemsToChest",
+"rep": null,
+"rep_task": null,
+"fk": "chat:inventory_used_slots_after:_${usedafter}/36:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Mine 5 coal ore",
+"prog": "mineFiveCoalOre",
+"rep": "mineFiveCoalOre",
+"rep_task": "Mine 5 coal ore",
+"fk": "mineBlock:coal_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Equip diamond_chestplate",
+"prog": "equipDiamondChestplate",
+"rep": "equipDiamondChestplate",
+"rep_task": "Equip diamond_chestplate",
+"fk": "equip:diamond_chestplate:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Mine 5 iron ore",
+"prog": "mineFiveIronOre",
+"rep": "mineFiveIronOre",
+"rep_task": "Mine 5 iron ore",
+"fk": "mineBlock:iron_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Equip iron_pickaxe",
+"prog": "equipIronPickaxe",
+"rep": "equipIronPickaxe",
+"rep_task": "Equip iron_pickaxe",
+"fk": "equip:iron_pickaxe:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Smelt 5 raw_iron",
+"prog": "smeltFiveRawIronTask",
+"rep": "smeltFiveRawIronTask",
+"rep_task": "Smelt 5 raw_iron",
+"fk": "smeltItem:iron_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Craft 1 iron sword",
+"prog": "craftOneIronSword",
+"rep": "craftIronSword",
+"rep_task": "Craft 1 iron_sword",
+"fk": "craftItem:iron_sword:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Mine 5 redstone ore",
+"prog": "mineFiveRedstoneOre",
+"rep": "mineFiveRedstoneOre",
+"rep_task": "Mine 5 redstone ore",
+"fk": "mineBlock:redstone_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Craft 1 clock",
+"prog": "craftClockCorrectly",
+"rep": "craftClockCorrectly",
+"rep_task": "Craft 1 clock",
+"fk": "craftItem:clock:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Craft 1 iron axe",
+"prog": "craftOneIronAxeTask",
+"rep": "craftOneIronAxeFixed",
+"rep_task": "Craft 1 iron_axe",
+"fk": "craftItem:iron_axe:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Craft 1 bucket",
+"prog": "craftBucketTask",
+"rep": "craftBucketTask",
+"rep_task": "Craft 1 bucket",
+"fk": "craftItem:bucket:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Mine 3 diamond ore",
+"prog": "mineThreeDiamondOreTask",
+"rep": "mineThreeDiamondOreProperly",
+"rep_task": "Mine 3 diamond ore",
+"fk": "mineBlock:diamond_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Mine 3 diamond ore",
+"prog": "mineThreeDiamondOreTask",
+"rep": "mineThreeDiamondOreProperly",
+"rep_task": "Mine 3 diamond ore",
+"fk": "mineBlock:diamond_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Mine 5 redstone ore",
+"prog": "mineRedstoneOreIfNeeded",
+"rep": "mineFiveRedstoneOre",
+"rep_task": "Mine 5 redstone ore",
+"fk": "mineBlock:redstone_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Craft 1 diamond_axe",
+"prog": "craftDiamondAxeTask",
+"rep": "craftDiamondAxeTask",
+"rep_task": "Craft 1 diamond_axe",
+"fk": "craftItem:diamond_axe:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Smelt 2 raw_gold",
+"prog": "smeltTwoRawGoldSafely",
+"rep": "smeltTwoRawGoldSafely",
+"rep_task": "Smelt 2 raw_gold",
+"fk": "smeltItem:gold_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Craft 1 iron helmet",
+"prog": "craftIronHelmetTask",
+"rep": "craftIronHelmetTask",
+"rep_task": "Craft 1 iron helmet",
+"fk": "craftItem:iron_helmet:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Equip diamond_chestplate",
+"prog": "equipDiamondChestplateTask",
+"rep": "equipDiamondChestplate",
+"rep_task": "Equip diamond_chestplate",
+"fk": "equip:diamond_chestplate:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Craft 1 chest",
+"prog": "craftOneChestTask",
+"rep": "craftOneChestTask",
+"rep_task": "Craft 1 chest",
+"fk": "craftItem:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Equip iron_helmet",
+"prog": "equipIronHelmetTask",
+"rep": "equipIronHelmetTask",
+"rep_task": "Equip iron_helmet",
+"fk": "equip:iron_helmet:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Craft 1 iron_boots",
+"prog": "craftIronBootsTask",
+"rep": "craftIronBootsTask",
+"rep_task": "Craft 1 iron_boots",
+"fk": "craftItem:iron_boots:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Mine 5 iron ore",
+"prog": "mineFiveIronOreTask",
+"rep": "mineFiveIronOre",
+"rep_task": "Mine 5 iron ore",
+"fk": "mineBlock:iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Smelt 11 raw_iron",
+"prog": "smeltElevenRawIronTask",
+"rep": "smeltFiveRawIronTask",
+"rep_task": "Smelt 5 raw_iron",
+"fk": "smeltItem:iron_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Craft 1 iron_chestplate",
+"prog": "craftIronChestplateTask",
+"rep": "craftIronChestplateTask",
+"rep_task": "Craft 1 iron_chestplate",
+"fk": "craftItem:iron_chestplate:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Craft 1 iron shovel",
+"prog": "craftIronShovelTask",
+"rep": "craftIronShovelTask",
+"rep_task": "Craft 1 iron shovel",
+"fk": "craftItem:iron_shovel:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Craft 1 iron helmet",
+"prog": "craftIronHelmetMain",
+"rep": "craftIronHelmetTask",
+"rep_task": "Craft 1 iron helmet",
+"fk": "craftItem:iron_helmet:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Mine 5 iron ore",
+"prog": "mineFiveIronOreRetryTask",
+"rep": "mineFiveIronOre",
+"rep_task": "Mine 5 iron ore",
+"fk": "mineBlock:iron_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Place a chest",
+"prog": "placeChestTask",
+"rep": "placeChestAroundBot",
+"rep_task": "Place a chest",
+"fk": "placeItem:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "skipped",
+"task": "Deposit useless items into the chest at (101, 37, 90)",
+"prog": "depositUselessItemsToChest",
+"rep": null,
+"rep_task": null,
+"fk": "chat:finished_depositing_useless_items.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Craft 1 iron helmet",
+"prog": "craftIronHelmetWithSmelting",
+"rep": "craftIronHelmetTask",
+"rep_task": "Craft 1 iron helmet",
+"fk": "craftItem:iron_helmet:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Smelt 5 raw_iron",
+"prog": "smeltFiveRawIronMain",
+"rep": "smeltFiveRawIronTask",
+"rep_task": "Smelt 5 raw_iron",
+"fk": "smeltItem:iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Equip diamond_chestplate",
+"prog": "equipDiamondChestplateTask",
+"rep": "equipDiamondChestplateTask",
+"rep_task": "Equip diamond_chestplate",
+"fk": "chat:diamond_chestplate_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Equip iron_chestplate",
+"prog": "equipIronChestplate",
+"rep": "equipIronChestplate",
+"rep_task": "Equip iron_chestplate",
+"fk": "chat:iron_chestplate_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Craft 1 iron sword",
+"prog": "craftRequestedIronSword",
+"rep": "craftIronSword",
+"rep_task": "Craft 1 iron_sword",
+"fk": "craftItem:iron_sword:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Craft 1 iron chestplate",
+"prog": "craftIronChestplateNow",
+"rep": "craftIronChestplateTask",
+"rep_task": "Craft 1 iron_chestplate",
+"fk": "craftItem:iron_chestplate:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Craft 1 iron leggings",
+"prog": "craftIronLeggingsTask",
+"rep": "craftIronLeggingsTask",
+"rep_task": "Craft 1 iron leggings",
+"fk": "craftItem:iron_leggings:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Craft 1 iron_boots",
+"prog": "craftIronBootsSmart",
+"rep": "craftIronBootsTask",
+"rep_task": "Craft 1 iron_boots",
+"fk": "craftItem:iron_boots:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Mine 5 clay",
+"prog": "mineFiveClay",
+"rep": "mineFiveClay",
+"rep_task": "Mine 5 clay",
+"fk": "mineBlock:clay:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Smelt 3 raw_iron",
+"prog": "smeltThreeRawIron",
+"rep": "smeltFiveRawIronTask",
+"rep_task": "Smelt 5 raw_iron",
+"fk": "smeltItem:iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Craft 1 diamond helmet",
+"prog": "craftDiamondHelmet",
+"rep": "craftDiamondHelmetTaskFixed",
+"rep_task": "Craft 1 diamond helmet",
+"fk": "craftItem:diamond_helmet:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Craft 1 iron leggings",
+"prog": "craftIronLeggingsWithFuelTask",
+"rep": "craftIronLeggingsTask",
+"rep_task": "Craft 1 iron leggings",
+"fk": "craftItem:iron_leggings:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Mine 5 lapis_ore",
+"prog": "mineFiveLapisOre",
+"rep": "mineThreeLapisOre",
+"rep_task": "Mine 3 lapis_ore",
+"fk": "mineBlock:lapis_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Craft 1 iron leggings",
+"prog": "craftIronLeggings",
+"rep": "craftIronLeggingsTask",
+"rep_task": "Craft 1 iron leggings",
+"fk": "craftItem:iron_leggings:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Craft 1 iron sword",
+"prog": "craftOneIronSwordTask",
+"rep": "craftIronSword",
+"rep_task": "Craft 1 iron_sword",
+"fk": "craftItem:iron_sword:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Equip iron_helmet",
+"prog": "equipIronHelmetIfNeeded",
+"rep": "equipIronHelmetTask",
+"rep_task": "Equip iron_helmet",
+"fk": "equip:iron_helmet:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Craft 1 iron shovel",
+"prog": "craftOneIronShovel",
+"rep": "craftIronShovelTask",
+"rep_task": "Craft 1 iron shovel",
+"fk": "craftItem:iron_shovel:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Craft 1 diamond_pickaxe",
+"prog": "craftOneDiamondPickaxeTask",
+"rep": "craftDiamondPickaxe",
+"rep_task": "Craft 1 diamond pickaxe",
+"fk": "craftItem:diamond_pickaxe:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Craft 1 iron boots",
+"prog": "craftIronBootsFromRawIron",
+"rep": "craftIronBootsTask",
+"rep_task": "Craft 1 iron_boots",
+"fk": "craftItem:iron_boots:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Craft 1 diamond shovel",
+"prog": "craftDiamondShovelTask",
+"rep": "craftDiamondShovelTask",
+"rep_task": "Craft 1 diamond shovel",
+"fk": "craftItem:diamond_shovel:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Equip diamond_helmet",
+"prog": "equipDiamondHelmetTask",
+"rep": "equipDiamondHelmetTask",
+"rep_task": "Equip diamond_helmet",
+"fk": "chat:diamond_helmet_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "added",
+"task": "Open chest and check items inside",
+"prog": "openAndCheckChestContents",
+"rep": "openAndCheckChestContents",
+"rep_task": "Open chest and check items inside",
+"fk": "checkItemInsideChest:*:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Open chest and check items inside",
+"prog": "openAndCheckChestTask",
+"rep": "openAndCheckChestContents",
+"rep_task": "Open chest and check items inside",
+"fk": "checkItemInsideChest:*:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Mine 5 redstone ore",
+"prog": "mineRedstoneTask",
+"rep": "mineFiveRedstoneOre",
+"rep_task": "Mine 5 redstone ore",
+"fk": "mineBlock:redstone_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Craft 1 iron shovel",
+"prog": "craftOneIronShovel",
+"rep": "craftIronShovelTask",
+"rep_task": "Craft 1 iron shovel",
+"fk": "craftItem:iron_shovel:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Mine 5 lapis_ore",
+"prog": "mineFiveLapisOre",
+"rep": "mineThreeLapisOre",
+"rep_task": "Mine 3 lapis_ore",
+"fk": "mineBlock:lapis_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Mine 5 lapis_ore",
+"prog": "mineFiveLapisOre",
+"rep": "mineThreeLapisOre",
+"rep_task": "Mine 3 lapis_ore",
+"fk": "mineBlock:lapis_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Mine 5 lapis ore",
+"prog": "mineFiveLapisOre",
+"rep": "mineThreeLapisOre",
+"rep_task": "Mine 3 lapis_ore",
+"fk": "mineBlock:lapis_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Craft 1 iron axe",
+"prog": "craftIronAxeTask",
+"rep": "craftOneIronAxeFixed",
+"rep_task": "Craft 1 iron_axe",
+"fk": "craftItem:iron_axe:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Equip diamond_helmet",
+"prog": "equipDiamondHelmetTaskSimple",
+"rep": "equipDiamondHelmetTask",
+"rep_task": "Equip diamond_helmet",
+"fk": "chat:diamond_helmet_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed7",
+"kind": "dedup",
+"task": "Craft 1 diamond chestplate",
+"prog": "craftDiamondChestplateMain",
+"rep": "craftDiamondChestplateTask",
+"rep_task": "Craft 1 diamond chestplate",
+"fk": "craftItem:diamond_chestplate:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Mine 1 wood log",
+"prog": "mineOneWoodLog",
+"rep": "mineOneWoodLog",
+"rep_task": "Mine 1 wood log",
+"fk": "mineBlock:oak_log:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Craft wooden pickaxe",
+"prog": "craftWoodenPickaxeProperly",
+"rep": "craftWoodenPickaxeProperly",
+"rep_task": "Craft wooden pickaxe",
+"fk": "chat:done_crafting_the_wooden_pickaxe.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Mine 8 cobblestone",
+"prog": "completeCobblestoneTask",
+"rep": "completeCobblestoneTask",
+"rep_task": "Mine 8 cobblestone",
+"fk": "mineBlock:cobblestone:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Mine 5 coal_ore",
+"prog": "mineFiveCoalOreProperly",
+"rep": "mineFiveCoalOreProperly",
+"rep_task": "Mine 5 coal_ore",
+"fk": "mineBlock:coal_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Mine 5 copper_ore",
+"prog": "mineFiveCopperProperly",
+"rep": "mineFiveCopperProperly",
+"rep_task": "Mine 5 copper_ore",
+"fk": "mineBlock:copper_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Mine 5 iron ore",
+"prog": "completeFiveIronTask",
+"rep": "completeFiveIronTask",
+"rep_task": "Mine 5 iron ore",
+"fk": "mineBlock:iron_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Craft iron sword",
+"prog": "craftIronSword",
+"rep": "craftIronSword",
+"rep_task": "Craft iron sword",
+"fk": "craftItem:iron_sword:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Craft iron pickaxe",
+"prog": "craftIronPickaxeTask",
+"rep": "craftIronPickaxeTask",
+"rep_task": "Craft iron pickaxe",
+"fk": "craftItem:iron_pickaxe:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "dedup",
+"task": "Mine 5 iron ore",
+"prog": "mineFiveIronOre",
+"rep": "completeFiveIronTask",
+"rep_task": "Mine 5 iron ore",
+"fk": "mineBlock:iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "dedup",
+"task": "Mine 5 iron ore",
+"prog": "mineFiveIronOreTask",
+"rep": "completeFiveIronTask",
+"rep_task": "Mine 5 iron ore",
+"fk": "mineBlock:iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Mine 3 diamond ore",
+"prog": "mineThreeDiamondsTask",
+"rep": "mineThreeDiamondsTask",
+"rep_task": "Mine 3 diamond ore",
+"fk": "mineBlock:diamond_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Craft 1 diamond pickaxe",
+"prog": "craftDiamondPickaxeTask",
+"rep": "craftDiamondPickaxeTask",
+"rep_task": "Craft 1 diamond pickaxe",
+"fk": "craftItem:diamond_pickaxe:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Craft iron helmet",
+"prog": "craftIronHelmetTask",
+"rep": "craftIronHelmetTask",
+"rep_task": "Craft iron helmet",
+"fk": "craftItem:iron_helmet:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Craft iron chestplate",
+"prog": "craftIronChestplateTask",
+"rep": "craftIronChestplateTask",
+"rep_task": "Craft iron chestplate",
+"fk": "craftItem:iron_chestplate:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Mine 5 deepslate_gold_ore",
+"prog": "mineFiveDeepslateGoldTask",
+"rep": "mineFiveDeepslateGoldTask",
+"rep_task": "Mine 5 deepslate_gold_ore",
+"fk": "mineBlock:deepslate_gold_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Mine 5 deepslate_iron_ore",
+"prog": "mineFiveDeepslateIronOreTask",
+"rep": "mineFiveDeepslateIronOreTask",
+"rep_task": "Mine 5 deepslate_iron_ore",
+"fk": "mineBlock:deepslate_iron_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Smelt 6 raw_gold",
+"prog": "smeltSixRawGoldTask",
+"rep": "smeltSixRawGoldTask",
+"rep_task": "Smelt 6 raw_gold",
+"fk": "smeltItem:gold_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Smelt 6 raw_iron",
+"prog": "smeltSixRawIronTask",
+"rep": "smeltSixRawIronTask",
+"rep_task": "Smelt 6 raw_iron",
+"fk": "smeltItem:iron_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Craft iron leggings",
+"prog": "craftIronLeggingsTask",
+"rep": "craftIronLeggingsTask",
+"rep_task": "Craft iron leggings",
+"fk": "craftItem:iron_leggings:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Craft iron boots",
+"prog": "craftIronBootsTask",
+"rep": "craftIronBootsTask",
+"rep_task": "Craft iron boots",
+"fk": "craftItem:iron_boots:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Mine 3 deepslate diamond ore",
+"prog": "mineThreeDeepslateDiamondsTask",
+"rep": "mineThreeDeepslateDiamondsTask",
+"rep_task": "Mine 3 deepslate diamond ore",
+"fk": "mineBlock:deepslate_diamond_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Mine 5 deepslate_redstone_ore",
+"prog": "mineFiveDeepslateRedstoneOreTask",
+"rep": "mineFiveDeepslateRedstoneOreTask",
+"rep_task": "Mine 5 deepslate_redstone_ore",
+"fk": "mineBlock:deepslate_redstone_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Craft diamond sword",
+"prog": "craftDiamondSwordTask",
+"rep": "craftDiamondSwordTask",
+"rep_task": "Craft diamond sword",
+"fk": "craftItem:diamond_sword:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Place a chest",
+"prog": "placeChestTask",
+"rep": "placeChestTask",
+"rep_task": "Place a chest",
+"fk": "placeItem:chest:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Open chest",
+"prog": "openNearbyChestTask",
+"rep": "openNearbyChestTask",
+"rep_task": "Open chest",
+"fk": "checkItemInsideChest:*:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "skipped",
+"task": "Deposit useless items into the chest at (115, -60, -39)",
+"prog": "depositJunkItemsToChest",
+"rep": null,
+"rep_task": null,
+"fk": "depositItemIntoChest:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Equip iron chestplate",
+"prog": "equipIronChestplateTask",
+"rep": "equipIronChestplateTask",
+"rep_task": "Equip iron chestplate",
+"fk": "chat:iron_chestplate_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Equip iron helmet",
+"prog": "equipIronHelmetFromChestTask",
+"rep": "equipIronHelmetFromChestTask",
+"rep_task": "Equip iron helmet",
+"fk": "chat:iron_helmet_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Equip iron leggings",
+"prog": "equipIronLeggingsTask",
+"rep": "equipIronLeggingsTask",
+"rep_task": "Equip iron leggings",
+"fk": "chat:iron_leggings_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Equip iron boots",
+"prog": "equipIronBootsTask",
+"rep": "equipIronBootsTask",
+"rep_task": "Equip iron boots",
+"fk": "chat:iron_boots_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Take 1 diamond_sword",
+"prog": "takeDiamondSword",
+"rep": "takeDiamondSword",
+"rep_task": "Take 1 diamond_sword",
+"fk": "getItemFromChest:diamond_sword:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Take 1 iron_sword",
+"prog": "takeIronSword",
+"rep": "takeIronSword",
+"rep_task": "Take 1 iron_sword",
+"fk": "getItemFromChest:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Craft diamond pickaxe",
+"prog": "craftDiamondPickaxeFromScratch",
+"rep": "craftDiamondPickaxeFromScratch",
+"rep_task": "Craft diamond pickaxe",
+"fk": "craftDiamondPickaxeTask:*:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Craft 1 diamond axe",
+"prog": "craftDiamondAxeTask",
+"rep": "craftDiamondAxeTask",
+"rep_task": "Craft 1 diamond axe",
+"fk": "craftItem:diamond_axe:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "dedup",
+"task": "Craft iron pickaxe",
+"prog": "craftIronPickaxeTask",
+"rep": "craftIronPickaxeTask",
+"rep_task": "Craft iron pickaxe",
+"fk": "craftItem:iron_pickaxe:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "dedup",
+"task": "Mine 3 deepslate diamond ore",
+"prog": "mineThreeDeepslateDiamondOreTask",
+"rep": "mineThreeDeepslateDiamondsTask",
+"rep_task": "Mine 3 deepslate diamond ore",
+"fk": "mineBlock:deepslate_diamond_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "dedup",
+"task": "Craft iron sword",
+"prog": "craftIronSwordTask",
+"rep": "craftIronSword",
+"rep_task": "Craft iron sword",
+"fk": "craftItem:iron_sword:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Craft 4 raw copper into copper ingots",
+"prog": "smeltRawCopperIntoIngotsTask",
+"rep": "smeltRawCopperIntoIngotsTask",
+"rep_task": "Craft 4 raw copper into copper ingots",
+"fk": "craftItem:copper_into_copper_ingot:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "dedup",
+"task": "Mine 5 deepslate_gold_ore",
+"prog": "mineDeepslateGoldOreTask",
+"rep": "mineFiveDeepslateGoldTask",
+"rep_task": "Mine 5 deepslate_gold_ore",
+"fk": "mineBlock:deepslate_gold_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Craft diamond chestplate",
+"prog": "craftDiamondChestplateTask",
+"rep": "craftDiamondChestplateTask",
+"rep_task": "Craft diamond chestplate",
+"fk": "craftItem:diamond_chestplate:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "dedup",
+"task": "Smelt 5 raw_gold",
+"prog": "smeltRawGoldTask",
+"rep": "smeltSixRawGoldTask",
+"rep_task": "Smelt 6 raw_gold",
+"fk": "smeltItem:gold_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Craft iron pickaxe",
+"prog": "craftIronPickaxeFromCurrentResources",
+"rep": "craftIronPickaxeFromCurrentResources",
+"rep_task": "Craft iron pickaxe",
+"fk": "await:craftironpickaxetask:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "dedup",
+"task": "Smelt 5 raw_gold",
+"prog": "smeltGoldTask",
+"rep": "smeltSixRawGoldTask",
+"rep_task": "Smelt 6 raw_gold",
+"fk": "smeltItem:gold_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Craft 1 compass",
+"prog": "craftCompassTask",
+"rep": "craftCompassTask",
+"rep_task": "Craft 1 compass",
+"fk": "craftItem:compass:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "dedup",
+"task": "Mine 3 deepslate diamond ore",
+"prog": "mine_three_deepslate_diamonds",
+"rep": "mineThreeDeepslateDiamondsTask",
+"rep_task": "Mine 3 deepslate diamond ore",
+"fk": "mineBlock:deepslate_diamond_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Equip iron_sword",
+"prog": "equipIronSwordTask",
+"rep": "equipIronSwordTask",
+"rep_task": "Equip iron_sword",
+"fk": "equip:iron_sword:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Equip diamond_chestplate",
+"prog": "equipDiamondChestplateTask",
+"rep": "equipDiamondChestplateTask",
+"rep_task": "Equip diamond_chestplate",
+"fk": "chat:diamond_chestplate_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "dedup",
+"task": "Mine 5 cobblestone",
+"prog": "mineFiveCobblestoneTask",
+"rep": "completeCobblestoneTask",
+"rep_task": "Mine 8 cobblestone",
+"fk": "mineBlock:cobblestone:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "dedup",
+"task": "Craft diamond chestplate",
+"prog": "craftDiamondChestplateIfNeeded",
+"rep": "craftDiamondChestplateTask",
+"rep_task": "Craft diamond chestplate",
+"fk": "craftItem:diamond_chestplate:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "dedup",
+"task": "Smelt 1 raw_iron",
+"prog": "smeltOneRawIronTask",
+"rep": "smeltSixRawIronTask",
+"rep_task": "Smelt 6 raw_iron",
+"fk": "smeltItem:iron_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Craft 1 clock",
+"prog": "craftClockTask",
+"rep": "craftClockTask",
+"rep_task": "Craft 1 clock",
+"fk": "craftItem:clock:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "dedup",
+"task": "Open nearby chest",
+"prog": "openNearbyChestTask",
+"rep": "openNearbyChestTask",
+"rep_task": "Open chest",
+"fk": "checkItemInsideChest:*:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "dedup",
+"task": "Mine 5 deepslate redstone ore",
+"prog": "mineDeepslateRedstoneFive",
+"rep": "mineFiveDeepslateRedstoneOreTask",
+"rep_task": "Mine 5 deepslate_redstone_ore",
+"fk": "mineBlock:deepslate_redstone_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Craft 1 lightning rod",
+"prog": "craftLightningRodTask",
+"rep": "craftLightningRodTask",
+"rep_task": "Craft 1 lightning rod",
+"fk": "craftItem:lightning_rod:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Craft iron chestplate",
+"prog": "completeIronChestplateTask",
+"rep": "completeIronChestplateTask",
+"rep_task": "Craft iron chestplate",
+"fk": "craftIronChestplateTask:*:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Equip iron_chestplate",
+"prog": "equipIronChestplate",
+"rep": "equipIronChestplate",
+"rep_task": "Equip iron_chestplate",
+"fk": "equip:iron_chestplate:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Equip diamond_chestplate",
+"prog": "equipDiamondChestplateTask",
+"rep": "equipDiamondChestplateTask",
+"rep_task": "Equip diamond_chestplate",
+"fk": "equip:diamond_chestplate:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "dedup",
+"task": "Smelt 1 raw iron",
+"prog": "smeltOneRawIronTask",
+"rep": "smeltSixRawIronTask",
+"rep_task": "Smelt 6 raw_iron",
+"fk": "smeltItem:iron_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "dedup",
+"task": "Smelt 1 raw_iron",
+"prog": "smeltOneRawIronTask",
+"rep": "smeltSixRawIronTask",
+"rep_task": "Smelt 6 raw_iron",
+"fk": "smeltItem:iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Craft diamond helmet",
+"prog": "craftDiamondHelmetTask",
+"rep": "craftDiamondHelmetTask",
+"rep_task": "Craft diamond helmet",
+"fk": "craftItem:diamond_helmet:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "dedup",
+"task": "Craft 1 diamond sword",
+"prog": "craftDiamondSwordMain",
+"rep": "craftDiamondSwordTask",
+"rep_task": "Craft diamond sword",
+"fk": "craftItem:diamond_sword:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Craft diamond boots",
+"prog": "craftDiamondBootsTask",
+"rep": "craftDiamondBootsTask",
+"rep_task": "Craft diamond boots",
+"fk": "craftItem:diamond_boots:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "dedup",
+"task": "Place a chest",
+"prog": "placeMyChest",
+"rep": "placeChestTask",
+"rep_task": "Place a chest",
+"fk": "placeItem:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "skipped",
+"task": "Deposit useless items into the chest at (95, -26, 15)",
+"prog": "depositUselessItemsToChest95Neg26Neg15",
+"rep": null,
+"rep_task": null,
+"fk": "bot.inventoryUsed:*:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "dedup",
+"task": "Take 1 diamond_helmet",
+"prog": "takeDiamondHelmet",
+"rep": "takeIronSword",
+"rep_task": "Take 1 iron_sword",
+"fk": "getItemFromChest:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "dedup",
+"task": "Mine 5 deepslate diamond ore",
+"prog": "mineFiveDeepslateDiamondOreTask",
+"rep": "mineThreeDeepslateDiamondsTask",
+"rep_task": "Mine 3 deepslate diamond ore",
+"fk": "mineBlock:deepslate_diamond_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Equip diamond_helmet",
+"prog": "equipDiamondHelmetTask",
+"rep": "equipDiamondHelmetTask",
+"rep_task": "Equip diamond_helmet",
+"fk": "equip:diamond_helmet:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "dedup",
+"task": "Mine 5 deepslate diamond ore",
+"prog": "mineFiveDeepslateDiamondOreTask",
+"rep": "mineThreeDeepslateDiamondsTask",
+"rep_task": "Mine 3 deepslate diamond ore",
+"fk": "mineBlock:deepslate_diamond_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Equip iron_helmet",
+"prog": "equipIronHelmetTask",
+"rep": "equipIronHelmetTask",
+"rep_task": "Equip iron_helmet",
+"fk": "equip:iron_helmet:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Craft diamond leggings",
+"prog": "craftDiamondLeggingsTask",
+"rep": "craftDiamondLeggingsTask",
+"rep_task": "Craft diamond leggings",
+"fk": "craftItem:diamond_leggings:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "dedup",
+"task": "Take 1 diamond_sword",
+"prog": "takeDiamondSwordFromNearbyChest",
+"rep": "takeDiamondSword",
+"rep_task": "Take 1 diamond_sword",
+"fk": "getItemFromChest:diamond_sword:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "dedup",
+"task": "Equip diamond_chestplate",
+"prog": "equipDiamondChestplate",
+"rep": "equipDiamondChestplateTask",
+"rep_task": "Equip diamond_chestplate",
+"fk": "equip:diamond_chestplate:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Take 1 diamond_helmet",
+"prog": "takeDiamondHelmetTask",
+"rep": "takeDiamondHelmetTask",
+"rep_task": "Take 1 diamond_helmet",
+"fk": "find:*:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "dedup",
+"task": "Open chest",
+"prog": "openChestTask",
+"rep": "openNearbyChestTask",
+"rep_task": "Open chest",
+"fk": "checkItemInsideChest:*:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Take 1 diamond_boots",
+"prog": "takeDiamondBootsFromChestTask",
+"rep": "takeDiamondBootsFromChestTask",
+"rep_task": "Take 1 diamond_boots",
+"fk": "chat:i_tried_to_take_the_diamond_boots,_but_they_are_not_in_my_inventory_yet.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "dedup",
+"task": "Equip diamond helmet",
+"prog": "equipDiamondHelmet",
+"rep": "equipDiamondHelmetTask",
+"rep_task": "Equip diamond_helmet",
+"fk": "equip:diamond_helmet:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "dedup",
+"task": "Mine 5 coal ore",
+"prog": "mineFiveCoalOreTask",
+"rep": "mineFiveCoalOreProperly",
+"rep_task": "Mine 5 coal_ore",
+"fk": "mineBlock:coal_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "dedup",
+"task": "Craft diamond pickaxe",
+"prog": "craftDiamondPickaxeObjective",
+"rep": "craftDiamondPickaxeFromScratch",
+"rep_task": "Craft diamond pickaxe",
+"fk": "craftDiamondPickaxeTask:*:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "added",
+"task": "Equip iron boots",
+"prog": "equipIronBootsGeneric",
+"rep": "equipIronBootsGeneric",
+"rep_task": "Equip iron boots",
+"fk": "equip:iron_boots:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed8",
+"kind": "dedup",
+"task": "Equip iron leggings",
+"prog": "equipIronLeggingsTask",
+"rep": "equipIronLeggingsTask",
+"rep_task": "Equip iron leggings",
+"fk": "chat:iron_leggings_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Mine 1 wood log",
+"prog": "mineOneWoodLog",
+"rep": "mineOneWoodLog",
+"rep_task": "Mine 1 wood log",
+"fk": "mineBlock:oak_log:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Craft 4 oak_planks",
+"prog": "craftFourOakPlanks",
+"rep": "craftFourOakPlanks",
+"rep_task": "Craft 4 oak_planks",
+"fk": "craftItem:oak_planks:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Craft 1 wooden_pickaxe",
+"prog": "craftWoodenPickaxe",
+"rep": "craftWoodenPickaxe",
+"rep_task": "Craft 1 wooden_pickaxe",
+"fk": "craftItem:wooden_pickaxe:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Mine 5 iron ore",
+"prog": "mineFiveIronOreSafely",
+"rep": "mineFiveIronOreSafely",
+"rep_task": "Mine 5 iron ore",
+"fk": "mineBlock:iron_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Craft 1 iron_pickaxe",
+"prog": "craftIronPickaxe",
+"rep": "craftIronPickaxe",
+"rep_task": "Craft 1 iron_pickaxe",
+"fk": "craftItem:iron_pickaxe:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Craft 1 iron_sword",
+"prog": "makeIronSword",
+"rep": "makeIronSword",
+"rep_task": "Craft 1 iron_sword",
+"fk": "craftItem:iron_sword:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Craft 1 iron chestplate",
+"prog": "craftIronChestplate",
+"rep": "craftIronChestplate",
+"rep_task": "Craft 1 iron chestplate",
+"fk": "craftItem:iron_chestplate:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Mine 5 coal ore",
+"prog": "mineFiveCoalOre",
+"rep": "mineFiveCoalOre",
+"rep_task": "Mine 5 coal ore",
+"fk": "mineBlock:coal_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "dedup",
+"task": "Mine 5 iron ore",
+"prog": "mineFiveIronTask",
+"rep": "mineFiveIronOreSafely",
+"rep_task": "Mine 5 iron ore",
+"fk": "mineBlock:iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Mine 5 copper ore",
+"prog": "mineFiveCopperOre",
+"rep": "mineFiveCopperOre",
+"rep_task": "Mine 5 copper ore",
+"fk": "mineBlock:copper_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Smelt 9 raw_iron",
+"prog": "smeltNineRawIron",
+"rep": "smeltNineRawIron",
+"rep_task": "Smelt 9 raw_iron",
+"fk": "smeltItem:iron_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "dedup",
+"task": "Mine 5 iron ore",
+"prog": "mineFiveIronOreTask",
+"rep": "mineFiveIronOreSafely",
+"rep_task": "Mine 5 iron ore",
+"fk": "mineBlock:iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Craft 1 iron helmet",
+"prog": "craftIronHelmet",
+"rep": "craftIronHelmet",
+"rep_task": "Craft 1 iron helmet",
+"fk": "craftItem:iron_helmet:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "dedup",
+"task": "Mine 5 copper ore",
+"prog": "completeCopperMiningTask",
+"rep": "mineFiveCopperOre",
+"rep_task": "Mine 5 copper ore",
+"fk": "mineBlock:copper_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Craft 1 iron leggings",
+"prog": "craftIronLeggings",
+"rep": "craftIronLeggings",
+"rep_task": "Craft 1 iron leggings",
+"fk": "craftItem:iron_leggings:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Smelt 5 raw_copper",
+"prog": "smeltFiveRawCopper",
+"rep": "smeltFiveRawCopper",
+"rep_task": "Smelt 5 raw_copper",
+"fk": "smeltItem:copper_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Equip iron helmet",
+"prog": "equipIronHelmet",
+"rep": "equipIronHelmet",
+"rep_task": "Equip iron helmet",
+"fk": "chat:iron_helmet_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Craft 1 iron boots",
+"prog": "craftIronBoots",
+"rep": "craftIronBoots",
+"rep_task": "Craft 1 iron boots",
+"fk": "craftItem:iron_boots:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Craft 1 shield",
+"prog": "craftOneShield",
+"rep": "craftOneShield",
+"rep_task": "Craft 1 shield",
+"fk": "craftItem:shield:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Craft 1 iron axe",
+"prog": "craftIronAxe",
+"rep": "craftIronAxe",
+"rep_task": "Craft 1 iron axe",
+"fk": "craftItem:iron_axe:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "dedup",
+"task": "Smelt 5 raw_copper",
+"prog": "smeltCopperTask",
+"rep": "smeltFiveRawCopper",
+"rep_task": "Smelt 5 raw_copper",
+"fk": "smeltItem:copper_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Craft 1 compass",
+"prog": "craftCompass",
+"rep": "craftCompass",
+"rep_task": "Craft 1 compass",
+"fk": "craftItem:compass:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "dedup",
+"task": "Equip iron helmet",
+"prog": "equipIronHelmetTask",
+"rep": "equipIronHelmet",
+"rep_task": "Equip iron helmet",
+"fk": "chat:iron_helmet_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Mine 5 lapis ore",
+"prog": "mineFiveLapisOre",
+"rep": "mineFiveLapisOre",
+"rep_task": "Mine 5 lapis ore",
+"fk": "mineBlock:lapis_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "dedup",
+"task": "Craft 1 iron pickaxe",
+"prog": "craftOneIronPickaxeIfNeeded",
+"rep": "craftIronPickaxe",
+"rep_task": "Craft 1 iron_pickaxe",
+"fk": "craftItem:iron_pickaxe:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "dedup",
+"task": "Mine 5 lapis ore",
+"prog": "completeFiveLapisTask",
+"rep": "mineFiveLapisOre",
+"rep_task": "Mine 5 lapis ore",
+"fk": "mineBlock:lapis_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "dedup",
+"task": "Equip iron helmet",
+"prog": "equipIronHelmetTask",
+"rep": "equipIronHelmet",
+"rep_task": "Equip iron helmet",
+"fk": "chat:iron_helmet_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "dedup",
+"task": "Mine 5 lapis ore",
+"prog": "completeLapisTask",
+"rep": "mineFiveLapisOre",
+"rep_task": "Mine 5 lapis ore",
+"fk": "mineBlock:lapis_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "dedup",
+"task": "Craft 1 iron helmet",
+"prog": "craftHelmetTask",
+"rep": "craftIronHelmet",
+"rep_task": "Craft 1 iron helmet",
+"fk": "craftItem:iron_helmet:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "dedup",
+"task": "Craft 1 iron helmet",
+"prog": "ensureIronHelmet",
+"rep": "craftIronHelmet",
+"rep_task": "Craft 1 iron helmet",
+"fk": "craftItem:iron_helmet:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Mine 5 gold ore",
+"prog": "mineFiveGoldOre",
+"rep": "mineFiveGoldOre",
+"rep_task": "Mine 5 gold ore",
+"fk": "mineBlock:gold_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Place a chest",
+"prog": "placeNearbyChest",
+"rep": "placeNearbyChest",
+"rep_task": "Place a chest",
+"fk": "placeItem:chest:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "skipped",
+"task": "Deposit useless items into the chest at (30, -13, -149)",
+"prog": "depositUselessItemsIntoChest",
+"rep": null,
+"rep_task": null,
+"fk": "chat:finished_depositing_useless_items.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Craft 1 copper_block",
+"prog": "craftCopperBlock",
+"rep": "craftCopperBlock",
+"rep_task": "Craft 1 copper_block",
+"fk": "craftItem:copper_block:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "dedup",
+"task": "Craft 1 iron pickaxe",
+"prog": "craftOneIronPickaxeTask",
+"rep": "craftIronPickaxe",
+"rep_task": "Craft 1 iron_pickaxe",
+"fk": "craftItem:iron_pickaxe:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Take 5 cobblestone",
+"prog": "takeFiveCobblestone",
+"rep": "takeFiveCobblestone",
+"rep_task": "Take 5 cobblestone",
+"fk": "getItemFromChest:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Mine 3 deepslate diamond ore",
+"prog": "mineThreeDeepslateDiamonds",
+"rep": "mineThreeDeepslateDiamonds",
+"rep_task": "Mine 3 deepslate diamond ore",
+"fk": "mineBlock:deepslate_diamond_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Craft 1 diamond pickaxe",
+"prog": "craftDiamondPickaxe",
+"rep": "craftDiamondPickaxe",
+"rep_task": "Craft 1 diamond pickaxe",
+"fk": "craftItem:diamond_pickaxe:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "dedup",
+"task": "Mine 3 deepslate diamond ore",
+"prog": "mine3DeepslateDiamondsTask",
+"rep": "mineThreeDeepslateDiamonds",
+"rep_task": "Mine 3 deepslate diamond ore",
+"fk": "mineBlock:deepslate_diamond_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "dedup",
+"task": "Mine 3 deepslate diamond ore",
+"prog": "mineThreeDeepslateDiamondsTask",
+"rep": "mineThreeDeepslateDiamonds",
+"rep_task": "Mine 3 deepslate diamond ore",
+"fk": "mineBlock:deepslate_diamond_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Craft 1 diamond helmet",
+"prog": "craftDiamondHelmet",
+"rep": "craftDiamondHelmet",
+"rep_task": "Craft 1 diamond helmet",
+"fk": "craftItem:diamond_helmet:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Craft 1 diamond boots",
+"prog": "craftDiamondBoots",
+"rep": "craftDiamondBoots",
+"rep_task": "Craft 1 diamond boots",
+"fk": "craftItem:diamond_boots:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Equip diamond_helmet",
+"prog": "equipDiamondHelmet",
+"rep": "equipDiamondHelmet",
+"rep_task": "Equip diamond_helmet",
+"fk": "chat:diamond_helmet_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Craft 1 diamond chestplate",
+"prog": "craftDiamondChestplateFixed",
+"rep": "craftDiamondChestplateFixed",
+"rep_task": "Craft 1 diamond chestplate",
+"fk": "craftItem:diamond_chestplate:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Smelt 6 raw_gold",
+"prog": "smeltSixRawGold",
+"rep": "smeltSixRawGold",
+"rep_task": "Smelt 6 raw_gold",
+"fk": "smeltItem:gold_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Craft 1 diamond axe",
+"prog": "craftDiamondAxeWithMining",
+"rep": "craftDiamondAxeWithMining",
+"rep_task": "Craft 1 diamond axe",
+"fk": "craftItem:diamond_axe:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "dedup",
+"task": "Craft 1 diamond pickaxe",
+"prog": "makeDiamondPickaxe",
+"rep": "craftDiamondPickaxe",
+"rep_task": "Craft 1 diamond pickaxe",
+"fk": "craftItem:diamond_pickaxe:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Craft 1 diamond sword",
+"prog": "craftDiamondSword",
+"rep": "craftDiamondSword",
+"rep_task": "Craft 1 diamond sword",
+"fk": "craftItem:diamond_sword:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Equip diamond_chestplate",
+"prog": "equipDiamondChestplate",
+"rep": "equipDiamondChestplate",
+"rep_task": "Equip diamond_chestplate",
+"fk": "chat:diamond_chestplate_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Craft 1 diamond shovel",
+"prog": "craftDiamondShovel",
+"rep": "craftDiamondShovel",
+"rep_task": "Craft 1 diamond shovel",
+"fk": "craftItem:diamond_shovel:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "dedup",
+"task": "Equip iron_helmet",
+"prog": "equipIronHelmetTask",
+"rep": "equipIronHelmet",
+"rep_task": "Equip iron helmet",
+"fk": "chat:iron_helmet_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "dedup",
+"task": "Place a chest",
+"prog": "placeChestTask",
+"rep": "placeNearbyChest",
+"rep_task": "Place a chest",
+"fk": "placeItem:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Mine 5 deepslate_gold_ore",
+"prog": "mineFiveDeepslateGoldOre",
+"rep": "mineFiveDeepslateGoldOre",
+"rep_task": "Mine 5 deepslate_gold_ore",
+"fk": "mineBlock:deepslate_gold_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "skipped",
+"task": "Deposit useless items into the chest at (60, -60, -139)",
+"prog": "depositUselessItemsToChest",
+"rep": null,
+"rep_task": null,
+"fk": "depositItemIntoChest:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "dedup",
+"task": "Equip diamond_helmet",
+"prog": "equipDiamondHelmetFromChest",
+"rep": "equipDiamondHelmet",
+"rep_task": "Equip diamond_helmet",
+"fk": "chat:diamond_helmet_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Take 1 shield",
+"prog": "takeOneShield",
+"rep": "takeOneShield",
+"rep_task": "Take 1 shield",
+"fk": "chat:done._i_now_have_1_shield.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "dedup",
+"task": "Craft 1 iron pickaxe",
+"prog": "craftOneIronPickaxe",
+"rep": "craftIronPickaxe",
+"rep_task": "Craft 1 iron_pickaxe",
+"fk": "craftItem:iron_pickaxe:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "dedup",
+"task": "Equip iron_helmet",
+"prog": "equipExistingIronHelmet",
+"rep": "equipIronHelmet",
+"rep_task": "Equip iron helmet",
+"fk": "chat:iron_helmet_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Craft 1 iron shovel",
+"prog": "craftIronShovel",
+"rep": "craftIronShovel",
+"rep_task": "Craft 1 iron shovel",
+"fk": "craftItem:iron_shovel:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "dedup",
+"task": "Craft 1 iron chestplate",
+"prog": "craftOneIronChestplate",
+"rep": "craftIronChestplate",
+"rep_task": "Craft 1 iron chestplate",
+"fk": "craftItem:iron_chestplate:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Equip diamond_boots",
+"prog": "equipDiamondBootsTask",
+"rep": "equipDiamondBootsTask",
+"rep_task": "Equip diamond_boots",
+"fk": "equip:diamond_boots:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Take 1 iron leggings",
+"prog": "takeIronLeggingsFromChest",
+"rep": "takeIronLeggingsFromChest",
+"rep_task": "Take 1 iron leggings",
+"fk": "getItemFromChest:*:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "dedup",
+"task": "Mine 5 deepslate diamond ore",
+"prog": "mineFiveDeepslateDiamonds",
+"rep": "mineThreeDeepslateDiamonds",
+"rep_task": "Mine 3 deepslate diamond ore",
+"fk": "mineBlock:deepslate_diamond_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Craft 1 diamond_leggings",
+"prog": "craftDiamondLeggingsTask",
+"rep": "craftDiamondLeggingsTask",
+"rep_task": "Craft 1 diamond_leggings",
+"fk": "craftItem:diamond_leggings:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Equip diamond_chestplate",
+"prog": "equipDiamondChestplateTask",
+"rep": "equipDiamondChestplateTask",
+"rep_task": "Equip diamond_chestplate",
+"fk": "equip:diamond_chestplate:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "dedup",
+"task": "Equip diamond_helmet",
+"prog": "equipDiamondHelmetCorrectly",
+"rep": "equipDiamondHelmet",
+"rep_task": "Equip diamond_helmet",
+"fk": "chat:diamond_helmet_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "dedup",
+"task": "Equip diamond_chestplate",
+"prog": "equipChestplateTask",
+"rep": "equipDiamondChestplate",
+"rep_task": "Equip diamond_chestplate",
+"fk": "chat:diamond_chestplate_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Equip diamond_leggings",
+"prog": "equipDiamondLeggingsTask",
+"rep": "equipDiamondLeggingsTask",
+"rep_task": "Equip diamond_leggings",
+"fk": "chat:diamond_leggings_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Equip diamond_axe",
+"prog": "equipDiamondAxeFromChest",
+"rep": "equipDiamondAxeFromChest",
+"rep_task": "Equip diamond_axe",
+"fk": "equip:diamond_axe:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Take 1 diamond shovel",
+"prog": "takeDiamondShovelFromChest",
+"rep": "takeDiamondShovelFromChest",
+"rep_task": "Take 1 diamond shovel",
+"fk": "getItemFromChest:diamond_shovel:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed9",
+"kind": "added",
+"task": "Take 1 iron boots",
+"prog": "takeIronBootsFromChest",
+"rep": "takeIronBootsFromChest",
+"rep_task": "Take 1 iron boots",
+"fk": "chat:done._i_now_have_1_iron_boots.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Mine 1 wood log",
+"prog": "mineOneWoodLog",
+"rep": "mineOneWoodLog",
+"rep_task": "Mine 1 wood log",
+"fk": "mineBlock:oak_log:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Craft 4 oak_planks",
+"prog": "craftFourOakPlanks",
+"rep": "craftFourOakPlanks",
+"rep_task": "Craft 4 oak_planks",
+"fk": "craftItem:oak_planks:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Craft wooden_pickaxe",
+"prog": "craftWoodenPickaxe",
+"rep": "craftWoodenPickaxe",
+"rep_task": "Craft wooden_pickaxe",
+"fk": "craftItem:wooden_pickaxe:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Mine 8 cobblestone",
+"prog": "mineEightCobblestone",
+"rep": "mineEightCobblestone",
+"rep_task": "Mine 8 cobblestone",
+"fk": "mineBlock:cobblestone:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Craft stone_pickaxe",
+"prog": "craftStonePickaxe",
+"rep": "craftStonePickaxe",
+"rep_task": "Craft stone_pickaxe",
+"fk": "craftItem:stone_pickaxe:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Mine 5 coal_ore",
+"prog": "mineFiveCoalOre",
+"rep": "mineFiveCoalOre",
+"rep_task": "Mine 5 coal_ore",
+"fk": "mineBlock:coal_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Mine 5 iron_ore",
+"prog": "mineFiveIronOreSafely",
+"rep": "mineFiveIronOreSafely",
+"rep_task": "Mine 5 iron_ore",
+"fk": "mineBlock:iron_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Smelt 6 raw_iron",
+"prog": "smeltSixRawIron",
+"rep": "smeltSixRawIron",
+"rep_task": "Smelt 6 raw_iron",
+"fk": "smeltItem:iron_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Craft iron_pickaxe",
+"prog": "craftIronPickaxe",
+"rep": "craftIronPickaxe",
+"rep_task": "Craft iron_pickaxe",
+"fk": "chat:done_crafting_iron_pickaxe.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "dedup",
+"task": "Mine 5 iron_ore",
+"prog": "mineFiveIronOreTask",
+"rep": "mineFiveIronOreSafely",
+"rep_task": "Mine 5 iron_ore",
+"fk": "mineBlock:iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "dedup",
+"task": "Mine 5 iron ore",
+"prog": "mineIronOreTask",
+"rep": "mineFiveIronOreSafely",
+"rep_task": "Mine 5 iron_ore",
+"fk": "mineBlock:iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "dedup",
+"task": "Mine 5 iron ore",
+"prog": "completeMineFiveIronOreTask",
+"rep": "mineFiveIronOreSafely",
+"rep_task": "Mine 5 iron_ore",
+"fk": "mineBlock:iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Craft iron sword",
+"prog": "craftIronSword",
+"rep": "craftIronSword",
+"rep_task": "Craft iron sword",
+"fk": "craftItem:iron_sword:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "dedup",
+"task": "Mine 5 iron_ore",
+"prog": "mineFiveIronOreTask",
+"rep": "mineFiveIronOreSafely",
+"rep_task": "Mine 5 iron_ore",
+"fk": "mineBlock:iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "dedup",
+"task": "Mine 5 iron ore",
+"prog": "mineFiveIronOreTask",
+"rep": "mineFiveIronOreSafely",
+"rep_task": "Mine 5 iron_ore",
+"fk": "mineBlock:iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Mine 5 diamond ore",
+"prog": "mineFiveDiamondOreSafely",
+"rep": "mineFiveDiamondOreSafely",
+"rep_task": "Mine 5 diamond ore",
+"fk": "mineBlock:diamond_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Craft diamond pickaxe",
+"prog": "craftDiamondPickaxe",
+"rep": "craftDiamondPickaxe",
+"rep_task": "Craft diamond pickaxe",
+"fk": "craftItem:diamond_pickaxe:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Craft diamond sword",
+"prog": "craftDiamondSword",
+"rep": "craftDiamondSword",
+"rep_task": "Craft diamond sword",
+"fk": "craftItem:diamond_sword:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Craft bucket",
+"prog": "craftBucket",
+"rep": "craftBucket",
+"rep_task": "Craft bucket",
+"fk": "craftItem:bucket:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "dedup",
+"task": "Smelt 4 raw_iron",
+"prog": "smeltFourRawIron",
+"rep": "smeltSixRawIron",
+"rep_task": "Smelt 6 raw_iron",
+"fk": "smeltItem:iron_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Craft iron chestplate",
+"prog": "craftIronChestplateSafely",
+"rep": "craftIronChestplateSafely",
+"rep_task": "Craft iron chestplate",
+"fk": "craftItem:iron_chestplate:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Craft iron axe",
+"prog": "craftIronAxe",
+"rep": "craftIronAxe",
+"rep_task": "Craft iron axe",
+"fk": "craftItem:iron_axe:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "dedup",
+"task": "Smelt 5 raw_iron",
+"prog": "smeltFiveRawIronTask",
+"rep": "smeltSixRawIron",
+"rep_task": "Smelt 6 raw_iron",
+"fk": "smeltItem:iron_ore:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Smelt 2 raw_copper",
+"prog": "completeOrSmeltTwoRawCopper",
+"rep": "completeOrSmeltTwoRawCopper",
+"rep_task": "Smelt 2 raw_copper",
+"fk": "smeltItem:copper_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Craft iron helmet",
+"prog": "craftIronHelmetSafely",
+"rep": "craftIronHelmetSafely",
+"rep_task": "Craft iron helmet",
+"fk": "craftItem:iron_helmet:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "dedup",
+"task": "Smelt 7 raw_iron",
+"prog": "smeltSevenRawIronTask",
+"rep": "smeltSixRawIron",
+"rep_task": "Smelt 6 raw_iron",
+"fk": "smeltItem:iron_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Craft diamond chestplate",
+"prog": "gatherDiamondsAndCraftChestplate",
+"rep": "gatherDiamondsAndCraftChestplate",
+"rep_task": "Craft diamond chestplate",
+"fk": "craftItem:diamond_chestplate:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Craft diamond leggings",
+"prog": "craftDiamondLeggings",
+"rep": "craftDiamondLeggings",
+"rep_task": "Craft diamond leggings",
+"fk": "craftItem:diamond_leggings:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Mine 5 lapis lazuli ore",
+"prog": "mineFiveLapisLazuli",
+"rep": "mineFiveLapisLazuli",
+"rep_task": "Mine 5 lapis lazuli ore",
+"fk": "mineBlock:lapis_lazuli_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Place a chest",
+"prog": "placeChestAroundMe",
+"rep": "placeChestAroundMe",
+"rep_task": "Place a chest",
+"fk": "placeItem:chest:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Craft iron leggings",
+"prog": "craftIronLeggings",
+"rep": "craftIronLeggings",
+"rep_task": "Craft iron leggings",
+"fk": "craftItem:iron_leggings:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "skipped",
+"task": "Deposit useless items into the chest at (83, -14, -18)",
+"prog": "depositUselessItemsToChest",
+"rep": null,
+"rep_task": null,
+"fk": "depositItemIntoChest:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "dedup",
+"task": "Smelt 5 raw_iron",
+"prog": "smeltFiveRawIronTask",
+"rep": "smeltSixRawIron",
+"rep_task": "Smelt 6 raw_iron",
+"fk": "smeltItem:iron_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Equip diamond chestplate",
+"prog": "equipDiamondChestplate",
+"rep": "equipDiamondChestplate",
+"rep_task": "Equip diamond chestplate",
+"fk": "equip:diamond_chestplate:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Craft diamond pickaxe",
+"prog": "craftDiamondPickaxeTask",
+"rep": "craftDiamondPickaxeTask",
+"rep_task": "Craft diamond pickaxe",
+"fk": "craftDiamondPickaxe:*:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "dedup",
+"task": "Craft iron pickaxe",
+"prog": "craftIronPickaxeTask",
+"rep": "smeltSixRawIron",
+"rep_task": "Smelt 6 raw_iron",
+"fk": "smeltItem:iron_ore:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Craft diamond boots",
+"prog": "craftDiamondBoots",
+"rep": "craftDiamondBoots",
+"rep_task": "Craft diamond boots",
+"fk": "craftItem:diamond_boots:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Equip iron chestplate",
+"prog": "equipIronChestplateSafely",
+"rep": "equipIronChestplateSafely",
+"rep_task": "Equip iron chestplate",
+"fk": "chat:iron_chestplate_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Open the nearby chest and check its contents",
+"prog": "openAndCheckNearbyChestFixed",
+"rep": "openAndCheckNearbyChestFixed",
+"rep_task": "Open the nearby chest and check its contents",
+"fk": "chat:chest_contents_checked.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Equip diamond chestplate",
+"prog": "equipDiamondChestplateTask",
+"rep": "equipDiamondChestplateTask",
+"rep_task": "Equip diamond chestplate",
+"fk": "chat:diamond_chestplate_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Take 1 bucket",
+"prog": "takeOneBucketFromChest",
+"rep": "takeOneBucketFromChest",
+"rep_task": "Take 1 bucket",
+"fk": "getItemFromChest:bucket:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Craft iron shovel",
+"prog": "craftIronShovelTask",
+"rep": "craftIronShovelTask",
+"rep_task": "Craft iron shovel",
+"fk": "craftItem:iron_shovel:*",
+"pm": "rule"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Craft iron helmet",
+"prog": "craftIronHelmetTask",
+"rep": "craftIronHelmetTask",
+"rep_task": "Craft iron helmet",
+"fk": "chat:finished_crafting_iron_helmet.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "dedup",
+"task": "Mine 5 lapis lazuli ore",
+"prog": "mineLapisGoal",
+"rep": "mineFiveLapisLazuli",
+"rep_task": "Mine 5 lapis lazuli ore",
+"fk": "mineBlock:lapis_lazuli_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "dedup",
+"task": "Mine 5 diamond ore",
+"prog": "mineFiveDiamonds",
+"rep": "mineFiveDiamondOreSafely",
+"rep_task": "Mine 5 diamond ore",
+"fk": "mineBlock:diamond_ore:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "dedup",
+"task": "Place a chest",
+"prog": "placeChestTask",
+"rep": "placeChestAroundMe",
+"rep_task": "Place a chest",
+"fk": "placeItem:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "dedup",
+"task": "Place a chest",
+"prog": "placeChestTask",
+"rep": "placeChestAroundMe",
+"rep_task": "Place a chest",
+"fk": "placeItem:chest:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "dedup",
+"task": "Craft diamond leggings",
+"prog": "craftDiamondLeggingsTask",
+"rep": "craftDiamondLeggings",
+"rep_task": "Craft diamond leggings",
+"fk": "craftItem:diamond_leggings:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Craft diamond pickaxe",
+"prog": "craftDiamondPickaxeFromInventory",
+"rep": "craftDiamondPickaxeFromInventory",
+"rep_task": "Craft diamond pickaxe",
+"fk": "craftDiamondPickaxeTask:*:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Craft diamond chestplate",
+"prog": "completeDiamondChestplateTask",
+"rep": "completeDiamondChestplateTask",
+"rep_task": "Craft diamond chestplate",
+"fk": "gatherDiamondsAndCraftChestplate:*:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "dedup",
+"task": "Open the nearby chest and check its contents",
+"prog": "openAndCheckNearbyChest",
+"rep": "openAndCheckNearbyChestFixed",
+"rep_task": "Open the nearby chest and check its contents",
+"fk": "chat:chest_contents_checked.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Craft iron pickaxe",
+"prog": "craftIronPickaxeTask",
+"rep": "craftIronPickaxeTask",
+"rep_task": "Craft iron pickaxe",
+"fk": "craftIronPickaxe:*:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Open the nearby chest and check its contents",
+"prog": "checkNearbyChestContents",
+"rep": "checkNearbyChestContents",
+"rep_task": "Open the nearby chest and check its contents",
+"fk": "chat:done_checking_the_chest.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "dedup",
+"task": "Equip diamond_chestplate",
+"prog": "equipDiamondChestplateTask",
+"rep": "equipDiamondChestplateTask",
+"rep_task": "Equip diamond chestplate",
+"fk": "chat:diamond_chestplate_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "dedup",
+"task": "Equip iron_chestplate",
+"prog": "equipIronChestplateTask",
+"rep": "equipIronChestplateSafely",
+"rep_task": "Equip iron chestplate",
+"fk": "chat:iron_chestplate_equipped.:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Equip diamond_boots",
+"prog": "equipDiamondBootsTask",
+"rep": "equipDiamondBootsTask",
+"rep_task": "Equip diamond_boots",
+"fk": "equip:diamond_boots:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Craft iron helmet",
+"prog": "craftHelmetTask",
+"rep": "craftHelmetTask",
+"rep_task": "Craft iron helmet",
+"fk": "craftIronHelmetTask:*:*",
+"pm": "llm"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Craft iron boots",
+"prog": "craftIronBootsTask",
+"rep": "craftIronBootsTask",
+"rep_task": "Craft iron boots",
+"fk": "craftItem:iron_boots:*",
+"pm": "rule_terminal_workflow"
+},
+{
+"run": "run-resub-fix2-seed10",
+"kind": "added",
+"task": "Equip diamond_leggings",
+"prog": "equipDiamondLeggings",
+"rep": "equipDiamondLeggings",
+"rep_task": "Equip diamond_leggings",
+"fk": "chat:diamond_leggings_equipped.:*",
+"pm": "llm"
+}
+]

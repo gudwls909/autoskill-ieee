@@ -152,7 +152,7 @@ class CurriculumAgent:
         return len(self.completed_tasks)
 
     def render_system_message(self):
-        system_message = SystemMessage(content=load_prompt("curriculum"))
+        system_message = SystemMessage(content=load_prompt(getattr(self, "prompt_name", "curriculum")))
         assert isinstance(system_message, SystemMessage)
         return system_message
 
