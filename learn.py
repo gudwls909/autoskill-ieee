@@ -29,7 +29,7 @@ parser.add_argument("-id",   type=str, default=None, help="run id suffix (e.g. e
 parser.add_argument("-from", dest="from_id", type=str, default=None,
                     help="source run id to copy checkpoint from (e.g. run-2026-03-31_14-05-54)")
 parser.add_argument("-ablation", dest="ablation", type=str, default="none",
-                    choices=["none", "no_dedup", "no_critique", "no_curriculum", "voyager_infra"],
+                    choices=["none", "no_dedup", "no_critique", "no_curriculum", "voyager_infra", "voyager_infra_emb"],
                     help="Ablation mode: 'none' (full AutoSkill), "
                          "'no_dedup' (disable deduplication gate), "
                          "'no_critique' (disable reuse critique injection)")

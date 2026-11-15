@@ -155,7 +155,7 @@ class SkillManager:
     # Core operations
     # ------------------------------------------------------------------
 
-    def add_new_skill(self, info, canonical=None, allow_dedup: bool = True):
+    def add_new_skill(self, info, canonical=None, allow_dedup: bool = True, emb_dedup_tau=None):
         """Add a skill to the library.
 
         Returns a dict:
@@ -204,6 +204,17 @@ class SkillManager:
         print(
             f"\033[33mSkill Manager generated description for {program_name}:\n{skill_description}\033[0m"
         )
+        # Embedding-similarity dedup baseline (R3.1): discard when the new description's cosine
+        # similarity to the nearest stored skill is >= emb_dedup_tau (overwrites of the same name excluded).
+        emb_cos = None
+        if emb_dedup_tau is not None and self.skills and program_name not in self.skills:
+            q = self.vectordb._embedding_function.embed_query(skill_description)
+            hit = self.vectordb._collection.query(query_embeddings=[q], n_results=1, include=["embeddings"])
+            e = hit["embeddings"][0][0]
+            emb_cos = float(sum(x * y for x, y in zip(q, e)) / ((sum(x * x for x in q) ** 0.5) * (sum(y * y for y in e) ** 0.5)))
+            if emb_cos >= emb_dedup_tau:
+                print(f"\033[33mSkill Manager: embedding dedup — {program_name} ~ {hit['ids'][0][0]} (cos={emb_cos:.3f}). Skipping.\033[0m")
+                return {"status": "dedup", "representative": hit["ids"][0][0], "emb_cos": emb_cos}
         if program_name in self.skills:
             print(f"\033[33mSkill {program_name} already exists. Rewriting!\033[0m")
             self.vectordb._collection.delete(ids=[program_name])
@@ -262,7 +273,7 @@ class SkillManager:
             f"{self.ckpt_dir}/skill/description/{dumped_program_name}.txt",
         )
         U.dump_json(self.skills, f"{self.ckpt_dir}/skill/skills.json")
-        return {"status": "added", "representative": program_name}
+        return {"status": "added", "representative": program_name, "emb_cos": emb_cos}
 
     def generate_skill_description(self, program_name, program_code):
         messages = [

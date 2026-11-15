@@ -124,7 +124,7 @@ class Voyager:
         # no_curriculum: Voyager's original curriculum prompt, no tier/library injection (R2, R4.4)
         # voyager_infra = Voyager's method on AutoSkill's shared infrastructure (primitives, prompts' domain
         # hints, critic drop rules, loop guards): dedup, critique, and curriculum changes all off.
-        assert ablation in ("none", "no_dedup", "no_critique", "no_curriculum", "voyager_infra"), \
+        assert ablation in ("none", "no_dedup", "no_critique", "no_curriculum", "voyager_infra", "voyager_infra_emb"), \
             f"Unknown ablation mode: {ablation!r}"
         self.ablation = ablation
 
@@ -205,9 +205,9 @@ class Voyager:
             core_inventory_items=curriculum_agent_core_inventory_items,
             log_dir=self.log_dir,
         )
-        if ablation in ("no_curriculum", "voyager_infra"):
+        if ablation in ("no_curriculum", "voyager_infra", "voyager_infra_emb"):
             self.curriculum_agent.prompt_name = "curriculum_voyager"
-        if ablation == "voyager_infra":
+        if ablation in ("voyager_infra", "voyager_infra_emb"):
             self.action_agent.prompt_name = "action_template_voyager"  # Voyager's soft reuse rule 2
         self.critic_agent = CriticAgent(
             model_name=critic_agent_model_name,
@@ -497,7 +497,7 @@ class Voyager:
         # so the agent sees it even if it succeeds on the very first attempt.
         # Disabled when ablation == "no_critique".
         initial_critique = ""
-        if self.ablation not in ("no_critique", "voyager_infra"):
+        if self.ablation not in ("no_critique", "voyager_infra", "voyager_infra_emb"):
             canonical_task = self.skill_semantic.canonicalize_task(task)
             if canonical_task:
                 fk = canonical_task.get("family_key")
@@ -619,7 +619,7 @@ class Voyager:
             # Disabled when ablation == "no_critique".
             already_calls_family = family_skill and family_skill in true_called
             redefined_family = family_skill and family_skill in redefined_known
-            if self.ablation not in ("no_critique", "voyager_infra") and family_skill and not already_calls_family:
+            if self.ablation not in ("no_critique", "voyager_infra", "voyager_infra_emb") and family_skill and not already_calls_family:
                 reuse_critique = self._build_reuse_critique(
                     family_skill, canonical_pre
                 )
@@ -635,7 +635,7 @@ class Voyager:
             # mineBlock, craftItem) that have a loaded skill covering the same material.
             # Inject a specific critique so the LLM replaces them on the next retry.
             # Disabled when ablation == "no_critique".
-            if self.ablation not in ("no_critique", "voyager_infra") and not success:
+            if self.ablation not in ("no_critique", "voyager_infra", "voyager_infra_emb") and not success:
                 prim_critique = self._build_primitive_reuse_critique(code)
                 if prim_critique:
                     critique = (critique + "\n\n" + prim_critique) if critique else prim_critique
@@ -767,8 +767,8 @@ class Voyager:
                 task, context = self.curriculum_agent.propose_next_task(
                     events=self.last_events,
                     chest_observation=self.action_agent.render_chest_observation(),
-                    skill_library=None if self.ablation in ("no_curriculum", "voyager_infra") else _skill_library,
-                    tier_summary=None if self.ablation in ("no_curriculum", "voyager_infra") else _tier_summary,
+                    skill_library=None if self.ablation in ("no_curriculum", "voyager_infra", "voyager_infra_emb") else _skill_library,
+                    tier_summary=None if self.ablation in ("no_curriculum", "voyager_infra", "voyager_infra_emb") else _tier_summary,
                     max_retries=5,
                 )
             except Exception as e:
@@ -835,7 +835,8 @@ class Voyager:
                 )
                 add_result = self.skill_manager.add_new_skill(
                     info, canonical=canonical,
-                    allow_dedup=(self.ablation not in ("no_dedup", "voyager_infra")),
+                    allow_dedup=(self.ablation not in ("no_dedup", "voyager_infra", "voyager_infra_emb")),
+                    emb_dedup_tau=(0.95 if self.ablation == "voyager_infra_emb" else None),
                 )
                 cjson = canonical.get("canonical_json") or {}
                 neighbors = self.skill_manager.semantic_neighbors(
@@ -856,6 +857,7 @@ class Voyager:
 
                 self._append_jsonl("skill_log.jsonl", {
                     "kind": add_result["status"],   # "added" | "dedup" | "skipped"
+                    "emb_cos": add_result.get("emb_cos"),
                     "task": info["task"],
                     "program_name": info["program_name"],
                     "representative": add_result["representative"],
