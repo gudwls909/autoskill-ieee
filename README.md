@@ -5,10 +5,6 @@ library instead of *re-implementing* it, and the library stays compact. Everythi
 primitives, prompts' domain hints, critic rules, loop guards) is shared with the Voyager baseline, which
 runs on the same code with the three components switched off (`-ablation voyager_infra`).
 
-> **Update in progress.** Results of the Voyager baseline on the shared code (`voyager_infra`, n = 10
-> with GPT-5.4-mini, n = 5 each with GPT-5.4 and Qwen2.5-Coder-14B) and of the embedding-dedup baseline
-> on the shared code (`voyager_infra_emb`, n = 10) are being finalized. Baseline rows will be added to the
-> tables below with the next update, together with their logs.
 
 ## Results (150 steps, mean ± std)
 
